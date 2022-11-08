@@ -41,7 +41,18 @@ body {
 }
 
 .cadeado {
-    margin-left: 3%;
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
     margin-top: 600px;
     width: 50px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.cadeado:hover {
+    width: 80px;
+    margin-top: 580px;
 }
