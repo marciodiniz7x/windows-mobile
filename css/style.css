@@ -15,5 +15,11 @@ body {
 }
 
 .corpoAparelho {
-    width: 300px;
+    max-width: 400px;
+}
+
+@media (max-height: 700px) {
+    .corpoAparelho {
+        width: 280px;
+    }
 }
