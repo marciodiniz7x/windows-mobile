@@ -1,0 +1,1 @@
+const telaBlock = document.querySelector('.telaBlock');

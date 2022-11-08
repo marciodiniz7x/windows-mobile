@@ -56,3 +56,8 @@ body {
     width: 80px;
     margin-top: 580px;
 }
+
+/* SUMIR OBJETOS */
+.sumir {
+    display: none;
+}
