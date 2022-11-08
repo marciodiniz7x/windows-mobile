@@ -15,16 +15,27 @@ body {
 }
 
 .corpoAparelho {
-   
-    
+    margin-top: -720px;
+    position: relative;
 }
 
 
 .tela {
     position: relative;
-    border: 1px solid blue;
-    top: -760px;
     width: 350px;
     height: 740px;
     
+}
+
+.telaDesl {
+
+}
+
+.telaBlock {
+    top: 35px;
+    position: absolute;
+    border: 1px solid blue;
+    background-image: url(../img/lockscreen.jpg);
+    width: 350px;
+    height: 740px;
 }
