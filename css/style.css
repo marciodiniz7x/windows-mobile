@@ -15,11 +15,16 @@ body {
 }
 
 .corpoAparelho {
-    max-width: 400px;
+   
+    
 }
 
-@media (max-height: 700px) {
-    .corpoAparelho {
-        width: 280px;
-    }
+
+.tela {
+    position: relative;
+    border: 1px solid blue;
+    top: -760px;
+    width: 350px;
+    height: 740px;
+    
 }
