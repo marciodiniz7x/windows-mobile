@@ -55,6 +55,19 @@ body {
 .cadeado:hover {
     width: 80px;
     margin-top: 580px;
+    
+}
+
+.btnPower {
+    z-index: 99;
+    position: absolute;
+    top: 285px;
+    left: 350px;
+    background-color: rgb(191, 213, 253);
+    opacity: 40%;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
 }
 
 /* SUMIR OBJETOS */
