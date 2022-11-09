@@ -52,12 +52,22 @@ body {
 .clock {
     z-index: 99;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 55%;
+    
     top: 0;
     bottom: 0;
     margin-top: 100px;
     font-size: 50px;
+}
+.data {
+    z-index: 99;
+    position: absolute;
+    left: 22%;
+    
+    top: 0;
+    bottom: 0;
+    margin-top: 180px;
+    width: 250px;
 }
 
 .cadeado {
