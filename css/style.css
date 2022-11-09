@@ -44,6 +44,7 @@ body {
     background-repeat: no-repeat;
     width: 350px;
     height: 740px;
+    transition: 300ms;
 }
 
 .cadeado {
