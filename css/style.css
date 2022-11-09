@@ -35,6 +35,8 @@ body {
     background: linear-gradient(45deg, black, rgb(63, 62, 62));
 }
 
+/* --------------- */
+/* LOCKSCREEN */
 .telaBlock {
     top: 35px;
     position: absolute;
@@ -45,6 +47,17 @@ body {
     width: 350px;
     height: 740px;
     transition: 300ms;
+}
+
+.clock {
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    margin-top: 600px;
+    width: 50px;
 }
 
 .cadeado {
