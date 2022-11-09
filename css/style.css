@@ -10,7 +10,7 @@ h1 {
 
 body {
     text-align: center;
-    background-color: black;
+    background: linear-gradient(90deg, rgb(0, 81, 255), rgb(0, 204, 255));
     color: white;
 }
 
@@ -28,14 +28,20 @@ body {
 }
 
 .telaDesl {
-
+    position: absolute;
+    margin-top: 40px;
+    width: 350px;
+    height: 740px;
+    background: linear-gradient(45deg, black, rgb(63, 62, 62));
 }
 
 .telaBlock {
     top: 35px;
     position: absolute;
-    border: 1px solid blue;
-    background-image: url(../img/lockscreen.jpg);
+    
+    background-image: url(../img/lockscreen02.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
     width: 350px;
     height: 740px;
 }
