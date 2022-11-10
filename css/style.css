@@ -80,6 +80,11 @@ body {
     border-radius: 15px;
     opacity: 70%;
     color: black;
+    font-size: 14px;
+}
+
+.instagramNotifi {
+    width: 20px;
 }
 
 .cadeado {
