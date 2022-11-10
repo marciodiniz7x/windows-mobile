@@ -121,7 +121,7 @@ body {
 
 /* --------------- */
 /* TELA INICIAL */
-.wallpaper {
+.telaInicial {
     top: 35px;
     position: absolute;
     
@@ -133,16 +133,20 @@ body {
     transition: 300ms;
 }
 .act-btn {
-    border: 1px solid red;
+   
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: 720px;
+    margin-top: 670px;
     align-items: center;
     justify-content: space-evenly;
     width: 300px;
     left: 50%;
+    transform: translateX(-50%);
     
+}
+
+.acts {
     
 }
 
