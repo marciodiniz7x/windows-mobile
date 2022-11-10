@@ -132,6 +132,19 @@ body {
     height: 740px;
     transition: 300ms;
 }
+.act-btn {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 720px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    left: 50%;
+    
+    
+}
 
 /* --------------- */
 /* BOTÕES */
