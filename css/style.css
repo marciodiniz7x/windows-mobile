@@ -119,6 +119,22 @@ body {
     
 }
 
+/* --------------- */
+/* TELA INICIAL */
+.wallpaper {
+    top: 35px;
+    position: absolute;
+    
+    background-image: url(../img/wallpaper01.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 740px;
+    transition: 300ms;
+}
+
+/* --------------- */
+/* BOTÕES */
 .btnPower {
     z-index: 99;
     position: absolute;
@@ -130,6 +146,8 @@ body {
     height: 50px;
     cursor: pointer;
 }
+
+
 
 /* SUMIR OBJETOS */
 .sumir {
