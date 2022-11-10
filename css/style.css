@@ -71,9 +71,15 @@ body {
     width: 250px;
 }
 
-.player {
+.notifi1 {
+    text-align: left;
+    margin-top: 300px;
+    width: 300px;
+    height: 90px;
+    background-color: white;
+    border-radius: 15px;
     opacity: 70%;
-    margin-top: 450px;
+    color: black;
 }
 
 .cadeado {
