@@ -133,21 +133,26 @@ body {
     transition: 300ms;
 }
 .act-btn {
-   
+    z-index: 99;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: relative;
     margin-top: 670px;
     align-items: center;
     justify-content: space-evenly;
     width: 300px;
-    left: 50%;
-    transform: translateX(-50%);
+   
     
 }
 
 .acts {
-    
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.acts:hover {
+    opacity: 50%;
+    filter: blur(5px);
 }
 
 /* --------------- */
