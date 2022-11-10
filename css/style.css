@@ -17,6 +17,7 @@ body {
 .corpoAparelho {
     margin-top: -720px;
     position: relative;
+    
 }
 
 
@@ -41,7 +42,7 @@ body {
     top: 35px;
     position: absolute;
     
-    background-image: url(../img/lockscreen02.png);
+    background-image: url(../img/lockscreen03.png);
     background-size: 120%;
     background-repeat: no-repeat;
     width: 350px;
@@ -68,6 +69,11 @@ body {
     bottom: 0;
     margin-top: 180px;
     width: 250px;
+}
+
+.player {
+    opacity: 70%;
+    margin-top: 450px;
 }
 
 .cadeado {
