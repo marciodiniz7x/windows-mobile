@@ -42,5 +42,6 @@ digitar.addEventListener('focusin', () => {
 })
 digitar.addEventListener('focusout', () => {
     pesquisaGoogle.classList.remove('sumir');
+    digitar.value = "";
 })
 
