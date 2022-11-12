@@ -3,6 +3,7 @@ const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
 const pesquisar = document.querySelector('.pesquisar');
+const pesquisaGoogle = document.querySelector('.pesquisaGoogle');
 const digitar = document.querySelector('.digitar');
 
 const cadeado = document.querySelector('.cadeado');
@@ -37,6 +38,9 @@ cadeado.addEventListener('click', () => {
 })
 
 digitar.addEventListener('focusin', () => {
-    pesquisar.classList.add('sumir')
+    pesquisaGoogle.classList.add('sumir');
+})
+digitar.addEventListener('focusout', () => {
+    pesquisaGoogle.classList.remove('sumir');
 })
 
