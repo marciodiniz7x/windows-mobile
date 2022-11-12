@@ -39,15 +39,18 @@ body {
 /* --------------- */
 /* LOCKSCREEN */
 .telaBlock {
-    top: 35px;
+    top: 40px;
     position: absolute;
-    
+  
     background-image: url(../img/lockscreen03.png);
     background-size: 120%;
     background-repeat: no-repeat;
     width: 350px;
     height: 740px;
+
+   
     transition: 300ms;
+
 }
 
 .clock {
@@ -133,22 +136,52 @@ body {
     transition: 300ms;
 }
 
-.googleSearch {
+.pesquisar {
+    
+    align-items: center;
+    text-align: left;
     z-index: 99;
     padding: 20px;
     left: 50%;
     transform: translateX(-50%);
     top: 100px;
     position: absolute;
-
+    background-color: aliceblue;
     width: 300px;
     height: 50px;
     border-radius: 25px;
     border: none;
-    font-size: 20px;
-    color: rgb(157, 174, 187);
-    
+
+    font-size: 21px;
+    color: black;
+   
 }
+.micGoogle {
+    position: absolute;
+    margin-top: 5px;
+    left: 260px;
+    width: 15px;
+}
+.digitar {
+    opacity: 30%;
+    align-items: center;
+    text-align: left;
+    z-index: 99;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    position: absolute;
+    background-color: aliceblue;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+
+    font-size: 21px;
+    color: black;
+}
+
 
 .act-btn {
     z-index: 99;
@@ -158,12 +191,12 @@ body {
     margin-top: 670px;
     align-items: center;
     justify-content: space-evenly;
-    width: 300px;
-   
+    width: 320px;
     
 }
 
 .acts {
+    width: 40px;
     transition: 300ms;
     cursor: pointer;
 }
@@ -192,4 +225,19 @@ body {
 /* SUMIR OBJETOS */
 .sumir {
     display: none;
+}
+
+
+/* ANIMAÇÕES */
+.abrirHoriz {
+    animation: abrirHoriz 400ms forwards;
+}
+
+@keyframes abrirHoriz {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 350px;
+    }
 }
