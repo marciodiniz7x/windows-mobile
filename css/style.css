@@ -211,11 +211,11 @@ body {
     
     border-radius: 15px;
 }
-.widgetWhatsapp {
+.widgetCamera {
     opacity: 95%;
     background-color: white;
-    width: 140px;
-    height: 140px;
+    width: 60px;
+    height: 60px;
     
     border-radius: 15px;
 }
