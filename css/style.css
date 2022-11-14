@@ -217,7 +217,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(/img/widgetStore.png);
+    background-image: url(../img/widgetStore.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,7 +228,10 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    
+    background-image: url(../img/widgetCamera.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .widgetLigar {
@@ -236,7 +239,10 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    
+    background-image: url(../img/widgetPhone.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .widgetMensagem {
@@ -244,7 +250,10 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    
+    background-image: url(../img/widgetMensagem.png);
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
