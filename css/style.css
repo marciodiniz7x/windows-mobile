@@ -198,8 +198,6 @@ body {
     width: 300px;
     height: 150px;
    
-  
-    top: 200px;
     border-radius: 15px;
 }
 .widgetAgenda {
@@ -257,6 +255,35 @@ body {
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.widgetWhatsapp {
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+.widgetInstagram {
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+.widgetMusic {
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+.widgetYoutube {
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
     border-radius: 15px;
 }
 
