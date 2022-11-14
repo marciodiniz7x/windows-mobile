@@ -211,6 +211,15 @@ body {
     
     border-radius: 15px;
 }
+
+.widgetStore {
+    opacity: 95%;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    
+    border-radius: 15px;
+}
 .widgetCamera {
     opacity: 95%;
     background-color: white;
