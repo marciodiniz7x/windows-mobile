@@ -194,10 +194,9 @@ body {
 .widgetClima {
     opacity: 95%;
     
-    background: linear-gradient(-90deg, white, rgb(183, 204, 250));
+    background: linear-gradient(-90deg, white, rgb(213, 223, 243));
     width: 300px;
     height: 150px;
-   
     border-radius: 15px;
 }
 .widgetAgenda {
@@ -246,7 +245,7 @@ body {
     border-radius: 15px;
 }
 .widgetMensagem {
-    opacity: 95%;
+    opacity: 90%;
     margin-top: -80px;
     background-color: aliceblue;
     width: 60px;
@@ -259,6 +258,7 @@ body {
 }
 
 .widgetWhatsapp {
+    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
@@ -266,6 +266,7 @@ body {
     border-radius: 15px;
 }
 .widgetInstagram {
+    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
@@ -273,6 +274,7 @@ body {
     border-radius: 15px;
 }
 .widgetMusic {
+    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
@@ -280,6 +282,7 @@ body {
     border-radius: 15px;
 }
 .widgetYoutube {
+    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
@@ -292,7 +295,7 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: 290px;
+    margin-top: 260px;
     align-items: center;
     justify-content: space-evenly;
     width: 320px;
