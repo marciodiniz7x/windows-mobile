@@ -183,18 +183,31 @@ body {
 }
 
 .flex-widgets {
+    top: 200px;
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .widgetClima {
     opacity: 95%;
-    position: absolute;
+    
     background: linear-gradient(-90deg, white, rgb(183, 204, 250));
     width: 300px;
     height: 150px;
-    left: 50%;
-    transform: translateX(-50%);
+   
+  
     top: 200px;
+    border-radius: 15px;
+}
+.widgetAgenda {
+    opacity: 95%;
+    
+    background: linear-gradient(-90deg, white, rgb(183, 204, 250));
+    width: 140px;
+    height: 140px;
+    
     border-radius: 15px;
 }
 
