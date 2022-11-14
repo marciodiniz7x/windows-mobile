@@ -182,6 +182,10 @@ body {
     color: black;
 }
 
+.flex-widgets {
+    display: flex;
+}
+
 .widgetClima {
     opacity: 95%;
     position: absolute;
