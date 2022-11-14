@@ -187,7 +187,8 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 20px;
+    width: 300px;
 }
 
 .widgetClima {
@@ -204,7 +205,15 @@ body {
 .widgetAgenda {
     opacity: 95%;
     
-    background: linear-gradient(-90deg, white, rgb(183, 204, 250));
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    
+    border-radius: 15px;
+}
+.widgetWhatsapp {
+    opacity: 95%;
+    background-color: white;
     width: 140px;
     height: 140px;
     
