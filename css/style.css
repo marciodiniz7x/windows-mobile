@@ -236,6 +236,8 @@ body {
 }
 .widgetLigar {
     opacity: 95%;
+    margin-top: -80px;
+    margin-left: 160px;
     background-color: aliceblue;
     width: 60px;
     height: 60px;
@@ -247,6 +249,7 @@ body {
 }
 .widgetMensagem {
     opacity: 95%;
+    margin-top: -80px;
     background-color: aliceblue;
     width: 60px;
     height: 60px;
