@@ -263,6 +263,12 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
+
+    background-image: url(../img/iconWhatsapp.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
     border-radius: 15px;
 }
 .widgetInstagram {
@@ -271,6 +277,12 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
+
+    background-image: url(../img/iconInstagram.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
     border-radius: 15px;
 }
 .widgetMusic {
@@ -279,6 +291,12 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
+
+    background-image: url(../img/iconWhatsapp.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     border-radius: 15px;
 }
 .widgetYoutube {
