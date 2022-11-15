@@ -272,6 +272,7 @@ body {
     background-repeat: no-repeat;
 
     border-radius: 15px;
+    cursor: pointer;
 }
 .widgetInstagram {
     margin-top: 15px;
