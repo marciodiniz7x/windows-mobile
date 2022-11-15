@@ -300,6 +300,7 @@ body {
     background-repeat: no-repeat;
 
     border-radius: 15px;
+    cursor: pointer;
 }
 .widgetYoutube {
     margin-top: 15px;
