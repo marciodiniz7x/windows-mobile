@@ -353,6 +353,17 @@ body {
     height: 50px;
     cursor: pointer;
 }
+.btnMais {
+    z-index: 99;
+    position: absolute;
+    top: 135px;
+    left: 350px;
+    background-color: rgb(191, 213, 253);
+    opacity: 40%;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+}
 
 
 
