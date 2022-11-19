@@ -331,11 +331,11 @@ body {
     font-size: 12px;
 }
 .diaMes {
-    margin-top: 10px;
-    margin-right: 81px;
+    margin-top: -10px;
+    margin-right: 70px;
 
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 42px;
 }
 
 .act-btn {
