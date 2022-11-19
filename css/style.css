@@ -327,15 +327,17 @@ body {
     margin-top: 10px;
     margin-right: 50px;
     color: rgb(28, 126, 255);
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 12px;
+    font-family: 'SF UI Display';
 }
 .diaMes {
     margin-top: -10px;
-    margin-right: 70px;
+    margin-right: 60px;
 
     font-weight: lighter;
     font-size: 42px;
+    font-family: 'SF UI Display';
 }
 
 .act-btn {
