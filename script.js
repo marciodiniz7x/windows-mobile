@@ -1,13 +1,20 @@
-// Seletor de Elementos
+// ---- Seletor de Elementos ---- //
+
+// Telas
 const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
+// Widgets
 const pesquisar = document.querySelector('.pesquisar');
 const pesquisaGoogle = document.querySelector('.pesquisaGoogle');
 const digitar = document.querySelector('.digitar');
-
 const cadeado = document.querySelector('.cadeado');
+
+// Botões Físicos
 const btnPower = document.querySelector('.btnPower');
+
+// Calendário
+const diaSemana = document.querySelector('.diaSemana');
 
 
 // -------------------- //
@@ -44,4 +51,7 @@ digitar.addEventListener('focusout', () => {
     pesquisaGoogle.classList.remove('sumir');
     digitar.value = "";
 })
+
+// Script Calendário
+
 
