@@ -324,7 +324,18 @@ body {
 
 /* Calendário */
 .diaSemana {
-    color: blue;
+    margin-top: 10px;
+    margin-right: 50px;
+    color: rgb(28, 126, 255);
+    font-weight: bold;
+    font-size: 12px;
+}
+.diaMes {
+    margin-top: 10px;
+    margin-right: 81px;
+
+    font-weight: lighter;
+    font-size: 22px;
 }
 
 .act-btn {
