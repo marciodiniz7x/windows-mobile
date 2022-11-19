@@ -11,7 +11,7 @@ h1 {
 body {
     text-align: center;
     background: linear-gradient(90deg, rgb(0, 81, 255), rgb(0, 204, 255));
-    color: white;
+    
 }
 
 .corpoAparelho {
@@ -202,6 +202,7 @@ body {
     border-radius: 15px;
 }
 .widgetAgenda {
+    position: relative;
     opacity: 95%;
     
     background-color: aliceblue;
