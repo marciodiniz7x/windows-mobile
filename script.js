@@ -53,9 +53,24 @@ digitar.addEventListener('focusout', () => {
 })
 
 // Script Calendário
-const data = new Date();
-const pegarDia = data.getDay();
-const pegarHora = data.getHours();
 
-diaSemana.innerHTML = pegarDia;
+
+const atualizaHora = () => {
+    const data = new Date();
+
+    const pegarAno = data.getFullYear()
+    const pegaMes = data.getMonth();
+    const pegarDia = data.getDay();
+    const pegarHora = data.getHours();
+
+    const semana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+
+    diaSemana.innerHTML = semana[pegarDia];
+}
+
+const loopHora = setInterval(() => {
+    atualizaHora();
+}, 100);
+
+
 
