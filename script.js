@@ -15,6 +15,7 @@ const btnPower = document.querySelector('.btnPower');
 
 // Calendário
 const diaSemana = document.querySelector('.diaSemana');
+const diaMes = document.querySelector('.diaMes')
 
 
 // -------------------- //
@@ -58,14 +59,17 @@ digitar.addEventListener('focusout', () => {
 const atualizaHora = () => {
     const data = new Date();
 
-    const pegarAno = data.getFullYear()
-    const pegaMes = data.getMonth();
+    const pegarAno = data.getFullYear();
+    const pegarMes = data.getMonth();
+    const pegarDiaMes = data.getDate()
     const pegarDia = data.getDay();
     const pegarHora = data.getHours();
 
     const semana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'SÁBADO'];
 
     diaSemana.innerHTML = semana[pegarDia];
+    diaMes.innerHTML = pegarDiaMes;
+    
 }
 
 const loopHora = setInterval(() => {
