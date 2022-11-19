@@ -53,5 +53,9 @@ digitar.addEventListener('focusout', () => {
 })
 
 // Script Calendário
+const data = new Date();
+const pegarDia = data.getDay();
+const pegarHora = data.getHours();
 
+diaSemana.innerHTML = pegarDia;
 
