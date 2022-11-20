@@ -204,12 +204,11 @@ body {
 }
 .clockClima {
     z-index: 99;
-
     top: 0;
     bottom: 0;
     margin-top: 10px;
-    margin-left: 130px;
-    font-size: 50px;
+    margin-left: 150px;
+    font-size: 40px;
     font-family: 'SF UI Display';
 }
 
