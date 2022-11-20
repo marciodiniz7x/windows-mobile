@@ -202,6 +202,17 @@ body {
     height: 150px;
     border-radius: 15px;
 }
+.clockClima {
+    z-index: 99;
+
+    top: 0;
+    bottom: 0;
+    margin-top: 10px;
+    margin-left: 130px;
+    font-size: 50px;
+    font-family: 'SF UI Display';
+}
+
 .widgetAgenda {
     position: relative;
     opacity: 95%;
