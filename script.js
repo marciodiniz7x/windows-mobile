@@ -21,19 +21,18 @@ const diaMes = document.querySelector('.diaMes')
 // -------------------- //
 //////// Script /////////
 
-let telaBloqueada = true;
+let telaDesligada = true;
 let telaDeBloqueio = false;
 let telaInicialLigada = false;
 btnPower.addEventListener('click', () => {
-    if (telaBloqueada === true) {
+    if (telaDesligada === true) {
         telaBlock.classList.remove('sumir');
-        telaBloqueada = false;
+        telaDesligada = false;
         
-
-    } else if (telaBloqueada === false || telaInicialLigada == true) {
+    } else if (telaDesligada === false || telaInicialLigada == true) {
         telaBlock.classList.add('sumir');
         telaInicial.classList.add('sumir');
-        telaBloqueada = true;
+        telaDesligada = true;
     }
 })
 
@@ -42,7 +41,6 @@ cadeado.addEventListener('click', () => {
     telaBlock.classList.add('sumir');
     telaInicialLigada = true;
     telaInicial.classList.remove('sumir');
-
 })
 
 digitar.addEventListener('focusin', () => {
@@ -54,18 +52,15 @@ digitar.addEventListener('focusout', () => {
 })
 
 // Script Calendário
-
-
 const atualizaHora = () => {
     const data = new Date();
-
     const pegarAno = data.getFullYear();
     const pegarMes = data.getMonth();
     const pegarDiaMes = data.getDate()
     const pegarDia = data.getDay();
     const pegarHora = data.getHours();
 
-    const semana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'SÁBADO'];
+    const semana = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FEIRA', 'SEXTA-FEIRA', 'SÁBADO'];
 
     diaSemana.innerHTML = semana[pegarDia];
     diaMes.innerHTML = pegarDiaMes;

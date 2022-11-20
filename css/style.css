@@ -58,7 +58,7 @@ body {
     z-index: 99;
     position: absolute;
     left: 55%;
-    
+    color: white;
     top: 0;
     bottom: 0;
     margin-top: 100px;
@@ -68,7 +68,7 @@ body {
     z-index: 99;
     position: absolute;
     left: 22%;
-    
+    color: white;
     top: 0;
     bottom: 0;
     margin-top: 180px;
@@ -326,7 +326,7 @@ body {
 .diaSemana {
     text-align: left;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     
     color: rgb(28, 126, 255);
     font-weight: bolder;
@@ -339,11 +339,83 @@ body {
     margin-top: -10px;
     
 
-    font-weight: lighter;
-    font-size: 42px;
+
+    font-size: 35px;
     font-family: 'SF UI Display';
 }
 
+.traco-tarefa1 {
+    margin-top: -3px;
+    position: absolute;
+    margin-left: 20px;
+    width: 3px;
+    height: 30px;
+    background-color: rgb(28, 164, 255);
+
+}
+.back-tarefa1 {
+    margin-top: -3px;
+    margin-left: 20px;
+    opacity: 10%;
+    background-color: rgb(28, 126, 255);
+    position: absolute;
+    width: 100px;
+    height: 30px;
+}
+.tarefa1 {
+    margin-top: -3px;
+    opacity: 100%;
+    text-align: left;
+    margin-left: 30px;
+
+    font-weight: bolder;
+    font-size: 12px;
+    font-family: 'SF UI Display';
+}
+.tarefa1-desc {
+    margin-top: -4px;
+    text-align: left;
+    margin-left: 30px;
+    color: rgb(23, 116, 255);
+    font-size: 12px;
+    font-family: 'SF UI Display';
+}
+
+.traco-tarefa2 {
+    position: absolute;
+    margin-left: 20px;
+    width: 3px;
+    height: 30px;
+    background-color: rgb(8, 218, 120);
+
+}
+.back-tarefa2 {
+    margin-left: 20px;
+    opacity: 10%;
+    background-color: rgb(8, 218, 120);
+    position: absolute;
+    width: 100px;
+    height: 30px;
+}
+.tarefa2 {
+    opacity: 100%;
+    text-align: left;
+    margin-left: 30px;
+   
+    font-weight: bolder;
+    font-size: 12px;
+    font-family: 'SF UI Display';
+}
+.tarefa2-desc {
+    margin-top: -4px;
+    text-align: left;
+    margin-left: 30px;
+    color: rgb(4, 148, 81);
+    font-size: 12px;
+    font-family: 'SF UI Display';
+}
+
+/* Botões Inferiores */
 .act-btn {
     z-index: 99;
     display: flex;
@@ -353,10 +425,8 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 320px;
-    
 }
 
-/* Botões Inferiores */
 .acts {
     width: 40px;
     transition: 300ms;
