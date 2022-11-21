@@ -89,7 +89,7 @@ const atualizaHora = () => {
     
     clockClima.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
 
-    dataCalendario.innerHTML = `${semana[pegarDia]}, ${pegarDiaMes} de ${}`
+    dataCalendario.innerHTML = `${semana[pegarDia]}, ${pegarDiaMes} de ${meses[pegarMes]}`
     
 }
 
