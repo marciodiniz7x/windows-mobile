@@ -163,6 +163,12 @@ body {
     left: 260px;
     width: 15px;
 }
+.pesquisaIcon {
+    
+    
+    margin-left: 10px;
+    width: 25px;
+}
 .digitar {
     opacity: 30%;
     align-items: center;
