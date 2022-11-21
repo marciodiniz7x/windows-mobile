@@ -204,12 +204,13 @@ body {
     border-radius: 15px;
 }
 .climaLuaSol {
+    opacity: 90%;
     position: absolute;
     width: 70px;
     height: 70px;
     margin-top: 10px;
     margin-left: 20px;
-    background-image: url(../img/climaLua.png);
+    /* background-image: url(../img/climaLua.png); ADICIONEI DINAMICAMENTE NO SCRIPT */
     background-size: 100%;
 }
 .temperatura {
