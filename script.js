@@ -18,6 +18,7 @@ const diaSemana = document.querySelector('.diaSemana');
 const diaMes = document.querySelector('.diaMes');
 const clock = document.querySelector('.clock');
 const clockClima = document.querySelector('.clockClima');
+const dataCalendario = document.querySelector('.data');
 
 
 // -------------------- //
@@ -77,7 +78,9 @@ const atualizaHora = () => {
         zeroMinuto = "";
     }
 
-    const semana = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FEIRA', 'SEXTA-FEIRA', 'SÁBADO'];
+    const semana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+
+    const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
     diaSemana.innerHTML = semana[pegarDia];
     diaMes.innerHTML = pegarDiaMes;
@@ -85,6 +88,8 @@ const atualizaHora = () => {
     clock.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
     
     clockClima.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
+
+    dataCalendario.innerHTML = `${semana[pegarDia]}, ${pegarDiaMes} de ${}`
     
 }
 
