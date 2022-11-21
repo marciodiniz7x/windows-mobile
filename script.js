@@ -96,8 +96,10 @@ const atualizaHora = () => {
     dataCalendario.innerHTML = `${semana[pegarDia]}, ${pegarDiaMes} de ${meses[pegarMes]}`
 
     // Lógica que modifica as imagens no widget de clima
-    if (pegarHora <= 6 ) {
+    if (pegarHora >= 6 && pegarHora <= 18) {
         imgLuaSol.style.backgroundImage = "url(../img/climaSol.png)";
+    } else {
+        imgLuaSol.style.backgroundImage = "url(../img/climaLua.png)";
     }
     
 }
