@@ -82,8 +82,8 @@ const atualizaHora = () => {
     diaSemana.innerHTML = semana[pegarDia];
     diaMes.innerHTML = pegarDiaMes;
 
-    clock.innerHTML = zeroHora + pegarHora + ':' + pegarMinuto;
-    clockClima.innerHTML = zeroHora + pegarHora + ':' + pegarMinuto;
+    clock.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
+    clockClima.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
     
 }
 
