@@ -477,7 +477,7 @@ body {
     cursor: pointer;
 }
 
-.acts:hover {
+.acts:active {
     opacity: 50%;
     filter: blur(5px);
 }
