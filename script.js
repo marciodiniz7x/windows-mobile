@@ -15,7 +15,9 @@ const btnPower = document.querySelector('.btnPower');
 
 // Calendário
 const diaSemana = document.querySelector('.diaSemana');
-const diaMes = document.querySelector('.diaMes')
+const diaMes = document.querySelector('.diaMes');
+const clock = document.querySelector('.clock');
+const clockClima = document.querySelector('.clockClima');
 
 
 // -------------------- //
@@ -64,6 +66,9 @@ const atualizaHora = () => {
 
     diaSemana.innerHTML = semana[pegarDia];
     diaMes.innerHTML = pegarDiaMes;
+
+    clock.innerHTML = pegarHora;
+    clockClima.innerHTML = pegarHora;
     
 }
 
