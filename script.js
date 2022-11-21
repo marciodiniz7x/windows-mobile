@@ -61,14 +61,29 @@ const atualizaHora = () => {
     const pegarDiaMes = data.getDate()
     const pegarDia = data.getDay();
     const pegarHora = data.getHours();
+    const pegarMinuto = data.getMinutes();
+
+    let zeroHora;
+    let zeroMinuto;
+    if (pegarHora < 10) {
+        zeroHora = 0;
+    } else {
+        zeroHora = "";
+    }
+
+    if (pegarMinuto < 10) {
+        zeroMinuto = 0;
+    } else {
+        zeroMinuto = "";
+    }
 
     const semana = ['DOMINGO', 'SEGUNDA-FEIRA', 'TERÇA-FEIRA', 'QUARTA-FEIRA', 'QUINTA-FEIRA', 'SEXTA-FEIRA', 'SÁBADO'];
 
     diaSemana.innerHTML = semana[pegarDia];
     diaMes.innerHTML = pegarDiaMes;
 
-    clock.innerHTML = pegarHora;
-    clockClima.innerHTML = pegarHora;
+    clock.innerHTML = zeroHora + pegarHora + ':' + pegarMinuto;
+    clockClima.innerHTML = zeroHora + pegarHora + ':' + pegarMinuto;
     
 }
 
