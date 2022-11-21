@@ -197,7 +197,7 @@ body {
 .widgetClima {
     opacity: 95%;
     
-    background: linear-gradient(45deg, rgb(0, 81, 255), rgb(0, 225, 255));
+    background: linear-gradient(45deg, rgb(0, 81, 255), rgb(60, 216, 255));
     width: 300px;
     height: 150px;
     border-radius: 15px;
