@@ -83,6 +83,7 @@ const atualizaHora = () => {
     diaMes.innerHTML = pegarDiaMes;
 
     clock.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
+    
     clockClima.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
     
 }
