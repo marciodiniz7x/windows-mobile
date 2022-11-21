@@ -202,6 +202,15 @@ body {
     height: 150px;
     border-radius: 15px;
 }
+.climaLuaSol {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-image: url(../img/climaLua.png);
+    background-size: 100%;
+}
 .clockClima {
     z-index: 99;
     top: 0;
