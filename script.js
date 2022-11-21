@@ -66,13 +66,13 @@ const atualizaHora = () => {
     let zeroHora;
     let zeroMinuto;
     if (pegarHora < 10) {
-        zeroHora = 0;
+        zeroHora = "0";
     } else {
         zeroHora = "";
     }
 
     if (pegarMinuto < 10) {
-        zeroMinuto = 0;
+        zeroMinuto = "0";
     } else {
         zeroMinuto = "";
     }
