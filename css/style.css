@@ -197,7 +197,7 @@ body {
 .widgetClima {
     opacity: 95%;
     
-    background: linear-gradient(-90deg, white, rgb(213, 223, 243));
+    background-color: white;
     width: 300px;
     height: 150px;
     border-radius: 15px;
@@ -210,6 +210,17 @@ body {
     margin-left: 20px;
     background-image: url(../img/climaLua.png);
     background-size: 100%;
+}
+.temperatura {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    margin-top: 90px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(176, 205, 230);
+
 }
 .clockClima {
     z-index: 99;
