@@ -9,6 +9,7 @@ const pesquisar = document.querySelector('.pesquisar');
 const pesquisaGoogle = document.querySelector('.pesquisaGoogle');
 const digitar = document.querySelector('.digitar');
 const cadeado = document.querySelector('.cadeado');
+const imgLuaSol = document.querySelector('.climaLuaSol');
 
 // Botões Físicos
 const btnPower = document.querySelector('.btnPower');
@@ -64,6 +65,7 @@ const atualizaHora = () => {
     const pegarHora = data.getHours();
     const pegarMinuto = data.getMinutes();
 
+    // Aqui criei as variáveis "zero" pra adicionar um 0 antes da hora ou minuto caso ele seja menor que 10, para manter sempre dois dígitos.
     let zeroHora;
     let zeroMinuto;
     if (pegarHora < 10) {
@@ -78,10 +80,12 @@ const atualizaHora = () => {
         zeroMinuto = "";
     }
 
+
     const semana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
 
     const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
+    // Lógica que modifica as horas e datas
     diaSemana.innerHTML = semana[pegarDia];
     diaMes.innerHTML = pegarDiaMes;
 
@@ -90,6 +94,9 @@ const atualizaHora = () => {
     clockClima.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
 
     dataCalendario.innerHTML = `${semana[pegarDia]}, ${pegarDiaMes} de ${meses[pegarMes]}`
+
+    // Lógica que modifica as imagens no widget de clima
+
     
 }
 
