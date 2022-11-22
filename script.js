@@ -24,6 +24,9 @@ const dataCalendario = document.querySelector('.data');
 // Traços Telas
 const tracos = document.querySelector('.tracos');
 const traco1 = document.querySelector('#traco1');
+const traco2 = document.querySelector('#traco2');
+const traco3 = document.querySelector('#traco3');
+const traco4 = document.querySelector('#traco4');
 
 
 // -------------------- //

@@ -390,6 +390,7 @@ body {
     background-color: white;
     border-radius: 2px;
     cursor: pointer;
+    transition: 400ms;
 }
 
 
