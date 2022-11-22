@@ -112,5 +112,8 @@ const loopHora = setInterval(() => {
     atualizaHora();
 }, 100);
 
-
+// Script Trocar Tela
+tracos.addEventListener('click', function() {
+    tracos.style.width = "24px"
+})
 
