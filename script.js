@@ -21,6 +21,10 @@ const clock = document.querySelector('.clock');
 const clockClima = document.querySelector('.clockClima');
 const dataCalendario = document.querySelector('.data');
 
+// Traços Telas
+const tracos = document.querySelector('.tracos');
+const traco1 = document.querySelector('#traco1');
+
 
 // -------------------- //
 //////// Script /////////

@@ -389,10 +389,7 @@ body {
     height: 8px;
     background-color: white;
     border-radius: 2px;
-}
-
-#traco1 {
-    width: 24px;
+    cursor: pointer;
 }
 
 
