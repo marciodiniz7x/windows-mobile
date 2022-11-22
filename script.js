@@ -123,3 +123,24 @@ traco1.addEventListener('click', function() {
     traco4.style.width = "8px";
 })
 
+traco2.addEventListener('click', function() {
+    traco1.style.width = "8px";
+    traco2.style.width = "24px";
+    traco3.style.width = "8px";
+    traco4.style.width = "8px";
+})
+
+traco3.addEventListener('click', function() {
+    traco1.style.width = "8px";
+    traco2.style.width = "8px";
+    traco3.style.width = "24px";
+    traco4.style.width = "8px";
+})
+
+traco4.addEventListener('click', function() {
+    traco1.style.width = "8px";
+    traco2.style.width = "8px";
+    traco3.style.width = "8px";
+    traco4.style.width = "24px";
+})
+
