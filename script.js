@@ -116,7 +116,10 @@ const loopHora = setInterval(() => {
 }, 100);
 
 // Script Trocar Tela
-tracos.addEventListener('click', function() {
-    tracos.style.width = "24px"
+traco1.addEventListener('click', function() {
+    traco1.style.width = "24px";
+    traco2.style.width = "8px";
+    traco3.style.width = "8px";
+    traco4.style.width = "8px";
 })
 
