@@ -81,12 +81,12 @@ const atualizaHora = () => {
     }
 
 
-    const semana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+    const semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
     const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
     // Lógica que modifica as horas e datas
-    diaSemana.innerHTML = semana[pegarDia];
+    diaSemana.innerHTML = semana[pegarDia].toUpperCase();
     diaMes.innerHTML = pegarDiaMes;
 
     clock.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;

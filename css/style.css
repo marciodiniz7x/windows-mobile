@@ -129,8 +129,8 @@ body {
     top: 35px;
     position: absolute;
     
-    background-image: url(../img/wallpaper01.png);
-    background-size: 120%;
+    background-image: url(../img/wallpaper02.png);
+    background-size: 100%;
     background-repeat: no-repeat;
     width: 350px;
     height: 740px;
@@ -149,19 +149,25 @@ body {
     position: absolute;
     background-color: aliceblue;
     width: 300px;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     border: none;
-
+    box-shadow: 1px 1px 15px 1px rgba(49, 48, 48, 0.3);
     font-size: 21px;
     color: black;
    
 }
-.micGoogle {
+.microphone {
     position: absolute;
-    margin-top: 5px;
+    top: 9px;
     left: 260px;
-    width: 15px;
+    width: 14px;
+}
+.bing {
+    position: absolute;
+ 
+    top: 7px;
+    width: 25px;
 }
 
 .digitar {
@@ -176,7 +182,7 @@ body {
     position: absolute;
     background-color: rgb(204, 228, 248);
     width: 300px;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     border: none;
 
@@ -275,7 +281,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/widgetCamera.png);
+    background-image: url(../img/office.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,8 +350,8 @@ body {
     width: 60px;
     height: 60px;
 
-    background-image: url(../img/iconSpotify.png);
-    background-size: 70%;
+    background-image: url(../img/oneDrive.png);
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -359,7 +365,7 @@ body {
     width: 60px;
     height: 60px;
 
-    background-image: url(../img/iconYoutube.png);
+    background-image: url(../img/mail.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -428,6 +434,7 @@ body {
 }
 
 .traco-tarefa2 {
+    margin-top: 5px;
     position: absolute;
     margin-left: 20px;
     width: 3px;
@@ -436,6 +443,7 @@ body {
 
 }
 .back-tarefa2 {
+    margin-top: 5px;
     margin-left: 20px;
     opacity: 10%;
     background-color: rgb(8, 218, 120);
@@ -444,6 +452,7 @@ body {
     height: 30px;
 }
 .tarefa2 {
+    margin-top: 5px;
     opacity: 100%;
     text-align: left;
     margin-left: 30px;
@@ -474,7 +483,7 @@ body {
 }
 
 .acts {
-    width: 40px;
+    width: 35px;
     transition: 300ms;
     cursor: pointer;
 }
