@@ -139,6 +139,25 @@ body {
     transition: 300ms;
 }
 
+.topIcons {
+    position: absolute;
+}
+#iconWifi {
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 25px;
+}
+#iconDados {
+    margin-top: 15px;
+    width: 20px;
+}
+#iconBluetooth {
+    width: 30px;
+}
+#iconBateria {
+    width: 30px;
+}
+
 .pesquisar {
     
     align-items: center;
