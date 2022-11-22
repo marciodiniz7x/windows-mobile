@@ -57,7 +57,8 @@ body {
 .clock {
     z-index: 99;
     position: absolute;
-    left: 55%;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
     top: 0;
     bottom: 0;
@@ -67,7 +68,8 @@ body {
 .data {
     z-index: 99;
     position: absolute;
-    left: 22%;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
     top: 0;
     bottom: 0;
@@ -152,7 +154,7 @@ body {
     height: 40px;
     border-radius: 25px;
     border: none;
-    box-shadow: 1px 1px 15px 1px rgba(49, 48, 48, 0.3);
+    box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
     font-size: 21px;
     color: black;
    
@@ -374,6 +376,26 @@ body {
     cursor: pointer;
 }
 
+.tracosTela {
+    margin-top: 8px;
+    color: white;
+    display: flex;
+    size: 4;
+    gap: 10px;
+}
+
+.tracos {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#traco1 {
+    width: 24px;
+}
+
+
 /* Calendário */
 .diaSemana {
     text-align: left;
@@ -476,7 +498,7 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: 260px;
+    margin-top: 225px;
     align-items: center;
     justify-content: space-evenly;
     width: 320px;

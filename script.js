@@ -6,7 +6,7 @@ const telaInicial = document.querySelector('.telaInicial');
 
 // Widgets
 const pesquisar = document.querySelector('.pesquisar');
-const pesquisaGoogle = document.querySelector('.pesquisaGoogle');
+const iconesPesquisa = document.querySelector('.iconesPesquisa');
 const digitar = document.querySelector('.digitar');
 const cadeado = document.querySelector('.cadeado');
 const imgLuaSol = document.querySelector('.climaLuaSol');
@@ -48,10 +48,10 @@ cadeado.addEventListener('click', () => {
 })
 
 digitar.addEventListener('focusin', () => {
-    pesquisaGoogle.classList.add('sumir');
+    iconesPesquisa.classList.add('sumir');
 })
 digitar.addEventListener('focusout', () => {
-    pesquisaGoogle.classList.remove('sumir');
+    iconesPesquisa.classList.remove('sumir');
     digitar.value = "";
 })
 
