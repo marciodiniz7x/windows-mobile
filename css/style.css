@@ -43,7 +43,6 @@ body {
 /* --------------- */
 /* LOCKSCREEN */
 .telaBlock {
-    
     position: absolute;
     
     background-image: url(../img/lockscreen03.png);
@@ -646,10 +645,10 @@ body {
 
 @keyframes abrirVert {
     0% {
-
+        top: 0px;
     }
 
     100% {
-        top: -800px;
+        top: -740px;
     }
 }
