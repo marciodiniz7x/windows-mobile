@@ -82,6 +82,17 @@ body {
     margin-top: 220px;
     width: 250px;
 }
+.musicPlayer {
+    opacity: 80%;
+    margin-top: 300px;
+    width: 250px;
+    height: 243px;
+   
+    background-image: url(../img/musicPlayer.png);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px;
+}
 
 .notifi1 {
     padding: 10px;
