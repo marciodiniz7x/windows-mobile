@@ -147,12 +147,13 @@ body {
     width: 340px;
     height: 730px;
     transition-duration: 300ms;
-    animation: abrirTela 300ms;
+    
 }
 
 .topIcons {
     position: absolute;
     transition-delay: 300ms;
+    animation: descer 600ms;
 }
 #iconWifi {
     
@@ -171,9 +172,8 @@ body {
     width: 18px;
 }
 #iconBateria {
-    position: absolute;
-    margin-top: 3px;
-    margin-left: 200px;
+    margin-top: -10px;
+    margin-left: 190px;
     width: 25px;
 }
 
@@ -613,11 +613,31 @@ body {
     animation: abrirHoriz 400ms forwards;
 }
 
+.abrirVert {
+    animation: abrirVert 400ms forwards;
+}
+
 @keyframes abrirHoriz {
     0% {
         width: 0px;
     }
     100% {
         width: 305px;
+    }
+}
+
+@keyframes descer {
+    0% {
+        margin-top: -30px;
+        visibility: hidden;
+    }
+
+    50% {
+        margin-top: -30px;
+        visibility: hidden;
+    }
+
+    100% {
+        margin-top: 0px;
     }
 }
