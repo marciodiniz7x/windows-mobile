@@ -52,10 +52,12 @@ cadeado.addEventListener('click', () => {
     telaBlock.classList.add('abrirVert');
     setTimeout(() => {
         telaBlock.classList.add('sumir');
+        telaBlock.classList.remove('abrirVert');
+
+        telaInicialLigada = true;
+        telaInicial.classList.remove('sumir');
     }, 400);
 
-    telaInicialLigada = true;
-    telaInicial.classList.remove('sumir');
 })
 
 digitar.addEventListener('focusin', () => {

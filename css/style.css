@@ -16,23 +16,25 @@ body {
 }
 
 .corpoAparelho {
-    margin-top: -800px;
+    margin-top: -700px;
     position: relative;
 }
 
 
 .tela {
-    top: 5px;
+    border: 1px solid white;
+    top: 60px;
     overflow: hidden;
     position: relative;
     width: 350px;
-    height: 800px;
+    height: 740px;
     
 }
 
 .telaDesl {
+    
     position: absolute;
-    margin-top: 40px;
+   
     width: 350px;
     height: 740px;
     background: linear-gradient(45deg, black, rgb(63, 62, 62));
@@ -41,9 +43,9 @@ body {
 /* --------------- */
 /* LOCKSCREEN */
 .telaBlock {
-    top: 40px;
+    
     position: absolute;
-  
+    
     background-image: url(../img/lockscreen03.png);
     background-size: 120%;
     background-repeat: no-repeat;
@@ -129,7 +131,7 @@ body {
 /* --------------- */
 /* TELA INICIAL */
 .telaInicial {
-    top: 35px;
+   
     position: absolute;
     
     background-image: url(../img/wallpaper02.png);
@@ -142,7 +144,7 @@ body {
 
 .tela1 {
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 4px;
     border: 3px solid rgb(225, 250, 193);
     width: 340px;
     height: 730px;
@@ -559,7 +561,7 @@ body {
 .botoesFisicos {
     left: 50%;
     transform: translateX(-50%);
-    top: 95px;
+    top: 110px;
     bottom: 0;
     position: absolute;
     width: 420px;
@@ -639,5 +641,15 @@ body {
 
     100% {
         margin-top: 0px;
+    }
+}
+
+@keyframes abrirVert {
+    0% {
+
+    }
+
+    100% {
+        top: -800px;
     }
 }
