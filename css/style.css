@@ -16,15 +16,17 @@ body {
 }
 
 .corpoAparelho {
-    margin-top: -720px;
+    margin-top: -800px;
     position: relative;
 }
 
 
 .tela {
+    top: 5px;
+    overflow: hidden;
     position: relative;
     width: 350px;
-    height: 740px;
+    height: 800px;
     
 }
 
@@ -114,13 +116,13 @@ body {
     top: 0;
     bottom: 0;
     margin-top: 600px;
-    width: 50px;
+    width: 30px;
     transition: 300ms;
     cursor: pointer;
 }
-.cadeado:hover {
-    width: 80px;
-    margin-top: 580px;
+.cadeado:active, .cadeado:hover {
+    width: 40px;
+    margin-top: 590px;
     
 }
 
@@ -138,26 +140,39 @@ body {
     transition: 300ms;
 }
 
+.tela1 {
+    overflow: hidden;
+    margin-top: 10px;
+    border: 3px solid rgb(225, 250, 193);
+    width: 340px;
+    height: 730px;
+    transition-duration: 300ms;
+    animation: abrirTela 300ms;
+}
+
 .topIcons {
     position: absolute;
+    transition-delay: 300ms;
 }
 #iconWifi {
-    margin-top: 12px;
-    margin-left: 25px;
+    
+    margin-top: -10px;
     width: 22px;
+    
 }
 #iconDados {
-    margin-top: 12px;
+    margin-top: -10px;
     margin-left: 3px;
     width: 18px;
 }
 #iconBluetooth {
-    margin-top: 12px;
+    margin-top: -10px;
     margin-left: 4px;
     width: 18px;
 }
 #iconBateria {
-    margin-top: 12px;
+    position: absolute;
+    margin-top: 3px;
     margin-left: 200px;
     width: 25px;
 }
@@ -415,6 +430,9 @@ body {
     cursor: pointer;
     transition: 400ms;
 }
+#traco1 {
+    width: 24px;
+}
 
 
 /* Calendário */
@@ -526,7 +544,7 @@ body {
 }
 
 .acts {
-    width: 35px;
+    width: 30px;
     transition: 300ms;
     cursor: pointer;
 }
@@ -538,11 +556,21 @@ body {
 
 /* --------------- */
 /* BOTÕES */
+.botoesFisicos {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 95px;
+    bottom: 0;
+    position: absolute;
+    width: 420px;
+    height: 800px;
+    border: 3px solid rgb(225, 97, 236);
+}
 .btnPower {
     z-index: 99;
     position: absolute;
-    top: 285px;
-    left: 350px;
+    top: 273px;
+    right: 0;
     background-color: rgb(191, 213, 253);
     opacity: 40%;
     width: 30px;
@@ -552,8 +580,8 @@ body {
 .btnMais {
     z-index: 99;
     position: absolute;
-    top: 135px;
-    left: 350px;
+    top: 125px;
+    right: 0;
     background-color: rgb(191, 213, 253);
     opacity: 40%;
     width: 30px;
@@ -563,8 +591,8 @@ body {
 .btnMenos {
     z-index: 99;
     position: absolute;
-    top: 200px;
-    left: 350px;
+    top: 190px;
+    right: 0;
     background-color: rgb(191, 213, 253);
     opacity: 40%;
     width: 30px;
@@ -590,6 +618,6 @@ body {
         width: 0px;
     }
     100% {
-        width: 350px;
+        width: 305px;
     }
 }
