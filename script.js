@@ -56,9 +56,9 @@ cadeado.addEventListener('click', () => {
     setTimeout(() => {
         telaBlock.classList.add('sumir');
         telaBlock.classList.remove('abrirVert');
-
-        
     }, 400);
+    telaInicialLigada = true;
+    telaInicial.classList.remove('sumir');
 
 })
 
