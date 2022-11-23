@@ -45,7 +45,7 @@ body {
 .telaBlock {
     position: absolute;
     
-    background-image: url(../img/lockscreen04.png);
+    background-image: url(../img/lockscreen05.png);
     background-size: 120%;
     background-repeat: no-repeat;
     width: 350px;
@@ -58,24 +58,28 @@ body {
 
 .clock {
     z-index: 99;
+    opacity: 70%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    font-family: 'SF UI Display';
     color: white;
+    font-weight: bold;
     top: 0;
     bottom: 0;
     margin-top: 100px;
-    font-size: 50px;
+    font-size: 70px;
 }
 .data {
     z-index: 99;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    font-family: 'SF UI Display';
     color: white;
     top: 0;
     bottom: 0;
-    margin-top: 180px;
+    margin-top: 220px;
     width: 250px;
 }
 
