@@ -1,6 +1,7 @@
 // ---- Seletor de Elementos ---- //
 
 // Telas
+const telaDesl = document.querySelector('.telaDesl');
 const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
@@ -37,10 +38,12 @@ let telaDeBloqueio = false;
 let telaInicialLigada = false;
 btnPower.addEventListener('click', () => {
     if (telaDesligada === true) {
+        telaDesl.classList.add('sumir');
         telaBlock.classList.remove('sumir');
         telaDesligada = false;
         
     } else if (telaDesligada === false || telaInicialLigada == true) {
+        telaDesl.classList.remove('sumir');
         telaBlock.classList.add('sumir');
         telaInicial.classList.add('sumir');
         telaDesligada = true;
@@ -54,8 +57,7 @@ cadeado.addEventListener('click', () => {
         telaBlock.classList.add('sumir');
         telaBlock.classList.remove('abrirVert');
 
-        telaInicialLigada = true;
-        telaInicial.classList.remove('sumir');
+        
     }, 400);
 
 })
