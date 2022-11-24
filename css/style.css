@@ -137,10 +137,12 @@ body {
     transition: 300ms;
     cursor: pointer;
 }
-.cadeado:active, .cadeado:hover {
+.cadeado:active {
+    filter: blur(5px);
+}
+.cadeado:hover {
     width: 40px;
     margin-top: 590px;
-    
 }
 
 /* --------------- */
