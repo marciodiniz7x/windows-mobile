@@ -54,8 +54,12 @@ cadeado.addEventListener('click', () => {
     telaDeBloqueio = false;
     telaBlock.classList.add('abrirVert');
     setTimeout(() => {
+        cadeado.classList.add('sumir');
+    }, 100);
+    setTimeout(() => {
         telaBlock.classList.add('sumir');
         telaBlock.classList.remove('abrirVert');
+        
     }, 400);
     telaInicialLigada = true;
     telaInicial.classList.remove('sumir');
