@@ -7,6 +7,7 @@
 h1 {
     margin-top: 30px;
     color: white;
+    font-size: 30px;
 }
 
 body {
@@ -575,8 +576,8 @@ body {
 .botoesFisicos {
     left: 50%;
     transform: translateX(-50%);
-    top: 110px;
-    bottom: 0;
+    top: 102px;
+    
     position: absolute;
     width: 420px;
     height: 800px;

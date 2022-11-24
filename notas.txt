@@ -1,0 +1,5 @@
+Amanhã:
+
+- Fazer cadeado sumir para não aparecer cobrindo a câmera
+- Configurar volume
+- Adicionar funções aos botões inferiores
