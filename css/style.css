@@ -210,6 +210,7 @@ body {
 }
 .volAlto {
     position: absolute;
+    margin-top: -3px;
     left: 200px;
 }
 .volumeBar {
