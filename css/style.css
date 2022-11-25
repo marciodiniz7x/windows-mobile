@@ -215,10 +215,11 @@ body {
 }
 .volumeBar {
     
-    position: absolute;
+    margin-top: 5px;
     width: 200px;
     height: 10px;
-    color: rgb(247, 197, 59);
+    background-color: rgb(211, 219, 223);
+    border-radius: 15px;
 }
 
 .pesquisar {
