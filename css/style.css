@@ -214,6 +214,7 @@ body {
     left: 228px;
 }
 .volumeBar {
+    
     position: absolute;
     width: 200px;
     height: 10px;
