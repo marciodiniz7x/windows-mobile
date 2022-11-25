@@ -207,6 +207,7 @@ body {
 .volBaixo {
     position: absolute;
     margin-top: -3px;
+    left: 2px;
 }
 .volAlto {
     position: absolute;
@@ -223,17 +224,14 @@ body {
 }
 .volProgress {
     position: absolute;
-    min-width: 0px;
-    max-width: 200px;
-    width: 40px;
+    
     height: 10px;
     background-color: rgb(7, 106, 255);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    transition: 300ms;
+    border-radius: 15px;
+    transition: 600ms;
 }
 .volProgressMax {
-    border-radius: 15px;
+    
 }
 
 .pesquisar {
@@ -665,7 +663,12 @@ body {
 .sumir {
     display: none;
 }
-
+.invisivel {
+    visibility: hidden;
+}
+/* (Criei duas classes separadas para sumir objetos pois display none bugava a barra de volume e visibility hidden bugava todo o resto) 
+---------------------
+*/
 
 /* ANIMAÇÕES */
 .abrirHoriz {
