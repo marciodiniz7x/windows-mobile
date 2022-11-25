@@ -202,7 +202,15 @@ body {
     width: 250px;
     height: 20px;
     border: 1px solid rgb(255, 255, 255);
-    ;
+    
+}
+.volBaixo {
+    position: absolute;
+    margin-top: -3px;
+}
+.volAlto {
+    position: absolute;
+    left: 200px;
 }
 .volumeBar {
     
