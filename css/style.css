@@ -223,10 +223,15 @@ body {
 }
 .volProgress {
     position: absolute;
-    
-    width: 50px;
+    max-width: 200px;
+    width: 40px;
     height: 10px;
-    background-color: rgb(114, 7, 255);
+    background-color: rgb(7, 106, 255);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: 300ms;
+}
+.volProgressMax {
     border-radius: 15px;
 }
 
