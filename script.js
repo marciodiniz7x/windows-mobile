@@ -14,6 +14,8 @@ const imgLuaSol = document.querySelector('.climaLuaSol');
 
 // Botões Físicos
 const btnPower = document.querySelector('.btnPower');
+const btnMais = document.querySelector('.btnMais');
+const btnMenos = document.querySelector('.btnMenos');
 
 // Calendário
 const diaSemana = document.querySelector('.diaSemana');
