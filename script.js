@@ -6,7 +6,7 @@ const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
 // Widgets
-const volProgress = document.querySelector('.volProgress');
+let volProgress = document.querySelector('.volProgress');
 const pesquisar = document.querySelector('.pesquisar');
 const iconesPesquisa = document.querySelector('.iconesPesquisa');
 const digitar = document.querySelector('.digitar');
@@ -53,13 +53,19 @@ btnPower.addEventListener('click', () => {
     }
 });
 
+let contadorVolume = 0;
 btnMais.addEventListener('click', () => {
-    volProgress.style.width += '40px'
-})
+    contadorVolume += 40;
+    
+});
 
 btnMenos.addEventListener('click', () => {
-    volProgress.style.width -= '40px'
-})
+    contadorVolume -= 40;
+});
+
+console.log(contadorVolume);
+
+volProgress.style.width = `${contadorVolume}px`;
 
 cadeado.addEventListener('click', () => {
     telaDeBloqueio = false;
