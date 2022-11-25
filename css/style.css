@@ -221,6 +221,14 @@ body {
     background-color: rgb(211, 219, 223);
     border-radius: 15px;
 }
+.volProgress {
+    position: absolute;
+    
+    width: 50px;
+    height: 10px;
+    background-color: rgb(114, 7, 255);
+    border-radius: 15px;
+}
 
 .pesquisar {
     
