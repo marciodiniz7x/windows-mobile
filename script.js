@@ -6,7 +6,7 @@ const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
 // Widgets
-const volProgress = document.qeursy('.volProgress');
+const volProgress = document.querySelector('.volProgress');
 const pesquisar = document.querySelector('.pesquisar');
 const iconesPesquisa = document.querySelector('.iconesPesquisa');
 const digitar = document.querySelector('.digitar');
@@ -54,7 +54,11 @@ btnPower.addEventListener('click', () => {
 });
 
 btnMais.addEventListener('click', () => {
-    
+    volProgress.style.width += '40px'
+})
+
+btnMenos.addEventListener('click', () => {
+    volProgress.style.width -= '40px'
 })
 
 cadeado.addEventListener('click', () => {
