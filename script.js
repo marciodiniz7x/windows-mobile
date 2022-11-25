@@ -53,6 +53,10 @@ btnPower.addEventListener('click', () => {
     }
 });
 
+btnMais.addEventListener('click', () => {
+    
+})
+
 cadeado.addEventListener('click', () => {
     telaDeBloqueio = false;
     telaBlock.classList.add('abrirVert');

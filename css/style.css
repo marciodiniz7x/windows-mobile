@@ -223,6 +223,7 @@ body {
 }
 .volProgress {
     position: absolute;
+    min-width: 0px;
     max-width: 200px;
     width: 40px;
     height: 10px;
