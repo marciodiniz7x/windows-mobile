@@ -211,10 +211,13 @@ body {
 .volAlto {
     position: absolute;
     margin-top: -3px;
-    left: 200px;
+    left: 228px;
 }
 .volumeBar {
-    
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    color: rgb(247, 197, 59);
 }
 
 .pesquisar {
