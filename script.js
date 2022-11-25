@@ -6,6 +6,7 @@ const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
 // Widgets
+const volProgress = document.qeursy('.volProgress');
 const pesquisar = document.querySelector('.pesquisar');
 const iconesPesquisa = document.querySelector('.iconesPesquisa');
 const digitar = document.querySelector('.digitar');
@@ -50,7 +51,7 @@ btnPower.addEventListener('click', () => {
         telaInicial.classList.add('sumir');
         telaDesligada = true;
     }
-})
+});
 
 cadeado.addEventListener('click', () => {
     telaDeBloqueio = false;
