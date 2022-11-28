@@ -198,12 +198,12 @@ body {
 
 .volumeArea {
     
-    background-color: aliceblue;
+    background-color: rgb(40, 54, 66);
     position: relative;
     margin-top: 40px;
     width: 250px;
     height: 20px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid;
     border-radius: 10px;
     
 }
