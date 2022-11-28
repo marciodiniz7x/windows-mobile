@@ -198,13 +198,11 @@ body {
 
 .volumeArea {
     
-    background-color: rgb(40, 54, 66);
+    
     position: relative;
     margin-top: 40px;
     width: 250px;
     height: 20px;
-    border: 1px solid;
-    border-radius: 10px;
     
 }
 .volBaixo {
@@ -218,8 +216,9 @@ body {
     left: 228px;
 }
 .volumeBar {
-    
-    margin-top: 5px;
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 4.5px;
     width: 200px;
     height: 10px;
     background-color: rgb(211, 219, 223);
