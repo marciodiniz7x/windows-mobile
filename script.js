@@ -75,6 +75,7 @@ btnMenos.addEventListener('click', () => {
    
 });
 
+// Atualização de softaweyuf
 
 cadeado.addEventListener('click', () => {
     telaDeBloqueio = false;
