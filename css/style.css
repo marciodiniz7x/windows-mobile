@@ -159,19 +159,9 @@ body {
     transition: 300ms;
 }
 
-.tela1 {
-    overflow: hidden;
-    margin-top: 80px;
-    border: 3px solid rgb(225, 250, 193);
-    width: 340px;
-    height: 600px;
-    transition-duration: 300ms;
-    
-}
-
 .topIcons {
     position: absolute;
-    margin-top: 7px;
+    margin-top: 5px;
     margin-left: 22px;
     transition-delay: 300ms;
     animation: descer 600ms;
@@ -199,9 +189,17 @@ body {
     width: 25px;
 }
 
+.tela1 {
+    overflow: hidden;
+    margin-top: 80px;
+    border: 3px solid rgb(225, 250, 193);
+    width: 340px;
+    height: 600px;
+    transition-duration: 300ms;
+    
+}
+
 .volumeArea {
-    
-    
     position: relative;
     margin-top: 40px;
     width: 250px;
