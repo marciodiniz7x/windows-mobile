@@ -196,7 +196,7 @@ body {
     margin-top: 25px;
     border: 3px solid rgb(225, 250, 193);
     width: 340px;
-    height: 570px;
+    height: 535px;
     transition-duration: 300ms;
     
 }
@@ -477,10 +477,11 @@ body {
 }
 
 .tracosTela {
-    margin-top: 8px;
+    margin-top: 25px;
     color: white;
     display: flex;
     size: 4;
+    width: 80px;
     gap: 10px;
 }
 
@@ -599,11 +600,12 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: 165px;
-    margin-left: -10px;
+    margin-top: 30px;
+    
     align-items: center;
     justify-content: space-evenly;
-    width: 320px;
+    width: 280px;
+    border: 1px solid rgb(228, 195, 208);
 }
 
 .acts {
