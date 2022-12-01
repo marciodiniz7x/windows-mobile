@@ -597,6 +597,7 @@ body {
     flex-direction: row;
     position: relative;
     margin-top: 165px;
+    margin-left: -10px;
     align-items: center;
     justify-content: space-evenly;
     width: 320px;
