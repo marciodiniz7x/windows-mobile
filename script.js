@@ -55,6 +55,7 @@ btnPower.addEventListener('click', () => {
 });
 
 let contadorVolume = 0;
+let sumirVolume;
 btnMais.addEventListener('click', () => {
     if (contadorVolume < 200) {
             contadorVolume += 40;
@@ -63,10 +64,11 @@ btnMais.addEventListener('click', () => {
     volProgress.style.width = `${contadorVolume}px`;
     volumeArea.classList.remove('invisivel');
     volProgress.style.transition = "";
-    setTimeout(() => {
-        volProgress.style.transition = "0ms"
-        volumeArea.classList.add('invisivel');
-    }, 3000);
+    
+    sumirVolume = setTimeout(() => {
+                        volProgress.style.transition = "0ms"
+                        volumeArea.classList.add('invisivel');
+                    }, 3000);
    
 });
 
