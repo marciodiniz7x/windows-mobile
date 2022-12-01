@@ -191,7 +191,7 @@ body {
 
 .tela1 {
     overflow: hidden;
-    margin-top: 80px;
+    margin-top: 25px;
     border: 3px solid rgb(225, 250, 193);
     width: 340px;
     height: 600px;
@@ -201,7 +201,7 @@ body {
 
 .volumeArea {
     position: relative;
-    margin-top: 40px;
+    margin-top: 50px;
     width: 250px;
     height: 20px;
     
@@ -292,7 +292,7 @@ body {
 
 .flex-widgets {
     z-index: 99;
-    top: 130px;
+    top: 100px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
