@@ -171,9 +171,12 @@ body {
 
 .topIcons {
     position: absolute;
+    margin-top: 7px;
+    margin-left: 22px;
     transition-delay: 300ms;
     animation: descer 600ms;
 }
+
 #iconWifi {
     
     margin-top: -10px;
