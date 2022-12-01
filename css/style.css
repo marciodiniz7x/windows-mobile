@@ -76,7 +76,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display light';
     color: white;
     top: 0;
     bottom: 0;
@@ -339,7 +339,7 @@ body {
     margin-top: 15px;
     margin-left: 150px;
     font-size: 40px;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display light';
 }
 .cidade {
     margin-top: 25px;
@@ -505,9 +505,9 @@ body {
     margin-top: 5px;
     
     color: rgb(28, 126, 255);
-    font-weight: bolder;
+    
     font-size: 12px;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display light';
 }
 .diaMes {
     text-align: left;
@@ -546,7 +546,7 @@ body {
 
     font-weight: bolder;
     font-size: 12px;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display light';
 }
 .tarefa1-desc {
     margin-top: -4px;
@@ -554,7 +554,7 @@ body {
     margin-left: 30px;
     color: rgb(23, 116, 255);
     font-size: 12px;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display light';
 }
 
 .traco-tarefa2 {
@@ -583,7 +583,7 @@ body {
    
     font-weight: bolder;
     font-size: 12px;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display light';
 }
 .tarefa2-desc {
     margin-top: -4px;
@@ -591,7 +591,7 @@ body {
     margin-left: 30px;
     color: rgb(4, 148, 81);
     font-size: 12px;
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display light';
 }
 
 /* Botões Inferiores */
