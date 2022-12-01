@@ -160,11 +160,13 @@ body {
 }
 
 .topIcons {
+    
     position: absolute;
     margin-top: 5px;
     margin-left: 22px;
     transition-delay: 300ms;
     animation: descer 600ms;
+    
 }
 
 #iconWifi {
@@ -194,7 +196,7 @@ body {
     margin-top: 25px;
     border: 3px solid rgb(225, 250, 193);
     width: 340px;
-    height: 600px;
+    height: 570px;
     transition-duration: 300ms;
     
 }
