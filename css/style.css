@@ -161,10 +161,10 @@ body {
 
 .tela1 {
     overflow: hidden;
-    margin-top: 4px;
+    margin-top: 80px;
     border: 3px solid rgb(225, 250, 193);
     width: 340px;
-    height: 730px;
+    height: 600px;
     transition-duration: 300ms;
     
 }
