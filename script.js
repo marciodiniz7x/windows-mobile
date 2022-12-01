@@ -63,12 +63,12 @@ btnMais.addEventListener('click', () => {
     console.log(contadorVolume);
     volProgress.style.width = `${contadorVolume}px`;
     volumeArea.classList.remove('invisivel');
-    volProgress.style.transition = "";
-    clearInterval(sumirVolume);
-    sumirVolume = setTimeout(() => {
-                        volProgress.style.transition = "0ms"
-                        volumeArea.classList.add('invisivel');
-                    }, 3000);
+    // volProgress.style.transition = "";
+    // clearInterval(sumirVolume);
+    // sumirVolume = setTimeout(() => {
+    //                     volProgress.style.transition = "0ms"
+    //                     volumeArea.classList.add('invisivel');
+    //                 }, 3000);
    
 });
 
