@@ -69,7 +69,6 @@ btnMais.addEventListener('click', () => {
                         volProgress.style.transition = "0ms"
                         volumeArea.classList.add('invisivel');
                     }, 3000);
-   
 });
 
 btnMenos.addEventListener('click', () => {
