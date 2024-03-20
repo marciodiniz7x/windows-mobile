@@ -1,0 +1,723 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(90deg, rgb(0, 81, 255), rgb(0, 204, 255));
+    
+}
+
+.corpoAparelho {
+    margin-top: -700px;
+    position: relative;
+}
+
+
+.tela {
+    border: 2px solid white;
+    top: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    height: 740px;
+    
+}
+
+.telaDesl {
+    
+    position: absolute;
+   
+    width: 350px;
+    height: 740px;
+    background: linear-gradient(45deg, black, rgb(63, 62, 62));
+}
+
+/* --------------- */
+/* LOCKSCREEN */
+.telaBlock {
+    position: absolute;
+    
+    background-image: url(../img/lockscreen05.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 740px;
+
+   
+    transition: 300ms;
+
+}
+
+.clock {
+    z-index: 99;
+    opacity: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'SF UI Display';
+    color: white;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    margin-top: 100px;
+    font-size: 70px;
+}
+.data {
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'SF UI Display light';
+    color: white;
+    top: 0;
+    bottom: 0;
+    margin-top: 220px;
+    width: 250px;
+}
+.musicPlayer {
+    opacity: 80%;
+    margin-top: 300px;
+    width: 250px;
+    height: 243px;
+   
+    background-image: url(../img/musicPlayer.png);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.notifi1 {
+    padding: 10px;
+    text-align: left;
+    margin-top: 300px;
+    width: 300px;
+    height: 95px;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 80%;
+    color: black;
+    font-size: 14px;
+}
+
+.notifi2 {
+    padding: 10px;
+    text-align: left;
+    margin-top: 10px;
+    width: 300px;
+    height: 95px;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 80%;
+    color: black;
+    font-size: 14px;
+}
+
+.instagramNotifi {
+    width: 20px;
+}
+
+.cadeado {
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    margin-top: 600px;
+    width: 30px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.cadeado:active {
+    filter: blur(5px);
+}
+.cadeado:hover {
+    width: 40px;
+    margin-top: 590px;
+}
+
+/* --------------- */
+/* TELA INICIAL */
+.telaInicial {
+   
+    position: absolute;
+    
+    background-image: url(../img/wallpaper02.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 740px;
+    transition: 300ms;
+}
+
+.topIcons {
+    
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 22px;
+    transition-delay: 300ms;
+    animation: descer 600ms;
+    
+}
+
+#iconWifi {
+    
+    margin-top: -10px;
+    width: 22px;
+    
+}
+#iconDados {
+    margin-top: -10px;
+    margin-left: 3px;
+    width: 18px;
+}
+#iconBluetooth {
+    margin-top: -10px;
+    margin-left: 4px;
+    width: 18px;
+}
+#iconBateria {
+    margin-top: -10px;
+    margin-left: 190px;
+    width: 25px;
+}
+
+.tela1 {
+    overflow: hidden;
+    margin-top: 25px;
+
+    width: 340px;
+    height: 535px;
+    transition-duration: 300ms;
+    
+}
+
+.volumeArea {
+    position: relative;
+    margin-top: 50px;
+    width: 250px;
+    height: 20px;
+    
+}
+.volBaixo {
+    position: absolute;
+    margin-top: -3px;
+    left: 2px;
+}
+.volAlto {
+    position: absolute;
+    margin-top: -3px;
+    left: 228px;
+}
+.volumeBar {
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 4.5px;
+    width: 200px;
+    height: 10px;
+    background-color: rgb(211, 219, 223);
+    border-radius: 15px;
+}
+.volProgress {
+    position: absolute;
+    
+    height: 10px;
+    background-color: rgb(7, 106, 255);
+    border-radius: 15px;
+    transition: 600ms;
+}
+.volProgressMax {
+    
+}
+
+.pesquisar {
+    
+    align-items: center;
+    text-align: left;
+    z-index: 99;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    position: absolute;
+    background-color: aliceblue;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
+    font-size: 21px;
+    color: black;
+   
+}
+.microphone {
+    position: absolute;
+    top: 9px;
+    left: 260px;
+    width: 14px;
+}
+.bing {
+    position: absolute;
+ 
+    top: 7px;
+    width: 25px;
+}
+
+.digitar {
+    opacity: 30%;
+    align-items: center;
+    text-align: left;
+    z-index: 99;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    position: absolute;
+    background-color: rgb(204, 228, 248);
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+
+    font-size: 21px;
+    color: black;
+}
+
+.flex-widgets {
+    z-index: 99;
+    top: 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 300px;
+    transition: 400ms;
+}
+
+.widgetClima {
+    opacity: 95%;
+    
+    background: linear-gradient(45deg, rgb(0, 81, 255), rgb(60, 216, 255));
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+}
+.climaLuaSol {
+    opacity: 90%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* background-image: url(../img/climaLua.png); ADICIONEI DINAMICAMENTE NO SCRIPT */
+    background-size: 100%;
+}
+.temperatura {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    margin-top: 90px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: aliceblue;
+}
+.clockClima {
+    color: aliceblue;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    margin-top: 15px;
+    margin-left: 150px;
+    font-size: 40px;
+    font-family: 'SF UI Display light';
+}
+.cidade {
+    margin-top: 25px;
+    margin-left: 50px;
+    color: aliceblue;
+    
+    border-radius: 10px;
+    
+}
+.locationIcon {
+    margin-top: 5px;
+    margin-left: 10px;
+    position: absolute;
+    width: 12px;
+}
+
+.widgetAgenda {
+    position: relative;
+    opacity: 95%;
+    
+    background-color: aliceblue;
+    width: 140px;
+    height: 140px;
+    
+    border-radius: 15px;
+}
+
+.widgetStore {
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/widgetStore.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.widgetCamera {
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/office.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.widgetLigar {
+    opacity: 95%;
+    margin-top: -80px;
+    margin-left: 160px;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/widgetPhone.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.widgetMensagem {
+    opacity: 90%;
+    margin-top: -80px;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/widgetMensagem.png);
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.widgetWhatsapp {
+    margin-top: 15px;
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../img/iconWhatsapp.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    cursor: pointer;
+}
+.widgetInstagram {
+    margin-top: 15px;
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../img/iconInstagram.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    cursor: pointer;
+}
+.widgetMusic {
+    margin-top: 15px;
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../img/oneDrive.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    cursor: pointer;
+}
+.widgetYoutube {
+    margin-top: 15px;
+    opacity: 95%;
+    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+
+    background-image: url(../img/mail.png);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.tracosTela {
+    margin-top: 25px;
+    color: white;
+    display: flex;
+    size: 4;
+    width: 80px;
+    gap: 10px;
+}
+
+.tracos {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 400ms;
+}
+#traco1 {
+    width: 24px;
+}
+
+
+/* Calendário */
+.diaSemana {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+    color: rgb(28, 126, 255);
+    
+    font-size: 12px;
+    font-family: 'SF UI Display light';
+}
+.diaMes {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    
+
+
+    font-size: 35px;
+    font-family: 'SF UI Display';
+}
+
+.traco-tarefa1 {
+    margin-top: -3px;
+    position: absolute;
+    margin-left: 20px;
+    width: 3px;
+    height: 30px;
+    background-color: rgb(28, 164, 255);
+
+}
+.back-tarefa1 {
+    margin-top: -3px;
+    margin-left: 20px;
+    opacity: 10%;
+    background-color: rgb(28, 126, 255);
+    position: absolute;
+    width: 100px;
+    height: 30px;
+}
+.tarefa1 {
+    margin-top: -3px;
+    opacity: 100%;
+    text-align: left;
+    margin-left: 30px;
+
+    font-weight: bolder;
+    font-size: 12px;
+    font-family: 'SF UI Display light';
+}
+.tarefa1-desc {
+    margin-top: -4px;
+    text-align: left;
+    margin-left: 30px;
+    color: rgb(23, 116, 255);
+    font-size: 12px;
+    font-family: 'SF UI Display light';
+}
+
+.traco-tarefa2 {
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 20px;
+    width: 3px;
+    height: 30px;
+    background-color: rgb(8, 218, 120);
+
+}
+.back-tarefa2 {
+    margin-top: 5px;
+    margin-left: 20px;
+    opacity: 10%;
+    background-color: rgb(8, 218, 120);
+    position: absolute;
+    width: 100px;
+    height: 30px;
+}
+.tarefa2 {
+    margin-top: 5px;
+    opacity: 100%;
+    text-align: left;
+    margin-left: 30px;
+   
+    font-weight: bolder;
+    font-size: 12px;
+    font-family: 'SF UI Display light';
+}
+.tarefa2-desc {
+    margin-top: -4px;
+    text-align: left;
+    margin-left: 30px;
+    color: rgb(4, 148, 81);
+    font-size: 12px;
+    font-family: 'SF UI Display light';
+}
+
+/* Botões Inferiores */
+.act-btn {
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 30px;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    width: 280px;
+    
+}
+
+.acts {
+    width: 30px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.acts:active {
+    opacity: 50%;
+    filter: blur(5px);
+}
+
+/* --------------- */
+/* BOTÕES */
+.botoesFisicos {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 102px;
+    
+    position: absolute;
+    width: 420px;
+    height: 800px;
+    
+}
+.btnPower {
+    z-index: 99;
+    position: absolute;
+    top: 273px;
+    right: 0;
+    background-color: rgb(191, 213, 253);
+    opacity: 40%;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+}
+.btnMais {
+    z-index: 99;
+    position: absolute;
+    top: 125px;
+    right: 0;
+    background-color: rgb(191, 213, 253);
+    opacity: 40%;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+.btnMenos {
+    z-index: 99;
+    position: absolute;
+    top: 190px;
+    right: 0;
+    background-color: rgb(191, 213, 253);
+    opacity: 40%;
+    width: 30px;
+    height: 60px;
+    cursor: pointer;
+}
+
+
+
+/* SUMIR OBJETOS */
+.sumir {
+    display: none;
+}
+.invisivel {
+    visibility: hidden;
+}
+/* (Criei duas classes separadas para sumir objetos pois display none bugava a barra de volume e visibility hidden bugava todo o resto) 
+---------------------
+*/
+
+/* ANIMAÇÕES */
+.abrirHoriz {
+    animation: abrirHoriz 400ms forwards;
+}
+
+.abrirVert {
+    animation: abrirVert 400ms forwards;
+}
+
+@keyframes abrirHoriz {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 305px;
+    }
+}
+
+@keyframes descer {
+    0% {
+        margin-top: -30px;
+        visibility: hidden;
+    }
+
+    50% {
+        margin-top: -30px;
+        visibility: hidden;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@keyframes abrirVert {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: -740px;
+    }
+}
