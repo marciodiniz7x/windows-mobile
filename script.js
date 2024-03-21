@@ -10,6 +10,9 @@ const flexWidgets2 = document.querySelector('.flex-widgets2');
 
 
 // Widgets
+const barraNotif = document.querySelector('.barra-notif');
+const topIcons = document.querySelector('.topIcons');
+const clockNotif = document.querySelector('.clockNotif');
 const volProgress = document.querySelector('.volProgress');
 const volumeArea = document.querySelector('.volumeArea')
 const pesquisar = document.querySelector('.pesquisar');
@@ -19,6 +22,7 @@ const cadeado = document.querySelector('.cadeado');
 const imgLuaSol = document.querySelector('.climaLuaSol');
 
 // Botões Físicos
+const btnTop = document.querySelector('.btnTop');
 const btnPower = document.querySelector('.btnPower');
 const btnMais = document.querySelector('.btnMais');
 const btnMenos = document.querySelector('.btnMenos');
@@ -29,6 +33,7 @@ const diaMes = document.querySelector('.diaMes');
 const clock = document.querySelector('.clock');
 const clockClima = document.querySelector('.clockClima');
 const dataCalendario = document.querySelector('.data');
+const dataNotif = document.querySelector('.dataNotif');
 
 // Traços Telas
 const tracosTela = document.querySelector('.tracosTela');
@@ -46,18 +51,18 @@ const actTask = document.querySelector('.actTask');
 // -------------------- //
 //////// Script /////////
 
-// function setarInicio() {
-//     flexWidgets2.classList.remove('sumir');
-//     flexWidgets.style.top = '200px';
-//     flexWidgets.style.position = 'absolute';
-    
-// }
-
-// function desativarInicio() {
-//     flexWidgets2.classList.remove('sumir');
-//     flexWidgets.style.position = 'relative';
-//     flexWidgets.style.top = '500px'
-// }
+let barraDrop = false;
+btnTop.addEventListener('click', () => {
+    if (barraDrop === false) {
+        barraNotif.style.top = '-1px';
+        topIcons.style.color = '#292929';
+        barraDrop = true
+    } else if (barraDrop === true) {
+        barraNotif.style.top = '-200px';
+        topIcons.style.color = '#f0f8ff';
+        barraDrop = false;
+    }
+});
 
 let telaDesligada = true;
 let telaDeBloqueio = false;
@@ -181,8 +186,10 @@ const atualizaHora = () => {
     clock.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
     
     clockClima.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
+    clockNotif.innerHTML = zeroHora + pegarHora + ':' + zeroMinuto + pegarMinuto;
 
     dataCalendario.innerHTML = `${semana[pegarDia]}, ${pegarDiaMes} de ${meses[pegarMes]}`
+    dataNotif.innerHTML = `${semana[pegarDia]}, ${pegarDiaMes} de ${meses[pegarMes]}`
 
     // Lógica que modifica as imagens no widget de clima
     if (pegarHora >= 6 && pegarHora <= 18) {
@@ -192,6 +199,8 @@ const atualizaHora = () => {
     }
     
 }
+
+
 
 const loopHora = setInterval(() => {
     atualizaHora();

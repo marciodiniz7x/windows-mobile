@@ -18,7 +18,7 @@ body {
 .corpoAparelho {
     margin-top: -700px;
     position: relative;
-    z-index: 0;
+    z-index: 2;
 }
 
 .tela {
@@ -151,31 +151,57 @@ body {
 
 .topIcons {
     position: absolute;
-    margin-top: 5px;
-    margin-left: 22px;
-    transition-delay: 300ms;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 28px;
+    transition-delay: 200ms;
     animation: descer 400ms;
-    
+    z-index: 2;
+    color: #f0f8ff;
+    transition-duration: 300ms;
 }
 
 #iconWifi {
     margin-top: -10px;
     width: 22px;
+    font-size: 20px;
+    
 }
 #iconDados {
     margin-top: -10px;
     margin-left: 3px;
     width: 18px;
-}
-#iconBluetooth {
-    margin-top: -10px;
-    margin-left: 4px;
-    width: 18px;
+    font-size: 20px;
+    
 }
 #iconBateria {
     margin-top: -10px;
-    margin-left: 190px;
+    margin-left: 4px;
     width: 25px;
+    font-size: 30px;
+    
+}
+
+#alarmClock {
+    margin-top: -10px;
+    margin-left: 145px;
+    width: 25px;
+    font-size: 20px;
+    
+}
+#clockTime {
+    
+    margin-top: -10px;
+    margin-left: 5px;
+    width: 25px;
+    font-size: 20px;
+    
+}
+.clockNotif {
+    z-index: 99;
+    font-size: 40px;
+    font-family: 'SF UI Display light';
 }
 
 .tela1 {
@@ -185,6 +211,93 @@ body {
     width: 340px;
     height: 535px;
     transition-duration: 300ms;
+}
+
+.barra-notif {
+    top: -200px;
+    left: 5px;
+    position: absolute;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
+    border-radius: 15px;
+    width: 340px;
+    height: 200px;
+    z-index: 1;
+    transition: 280ms;
+    
+}
+.notifContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+    width: 340px;
+    height: 170px;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+}
+
+.separador {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.185);
+    height: 1px;
+    width: 315px;
+}
+
+.ativaIcon {
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.circleWifi {
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+.circleDisturb {
+    background-color: rgb(184, 191, 212);
+    color: rgb(77, 77, 77);
+}
+.circleDados {
+    background-color: rgb(184, 191, 212);
+    color: rgb(77, 77, 77);
+}
+.circleBlue {
+    background-color: rgb(184, 191, 212);
+    color: rgb(77, 77, 77);
+}
+.circleEcono {
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+.circleFlash {
+    background-color: rgb(184, 191, 212);
+    color: rgb(77, 77, 77);
+}
+
+.msgNotif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+}
+.whatsappContent, .instagramContent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 3px;
+}
+.msgNotif img {
+    width: 10px;
+    height: 10px;
+    
 }
 
 .volumeArea {
@@ -227,7 +340,7 @@ body {
 .pesquisar {
     align-items: center;
     text-align: left;
-    z-index: 99;
+    z-index: 0;
     padding: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -685,14 +798,25 @@ body {
     position: absolute;
     width: 420px;
     height: 800px;
-    z-index: 0;
+    z-index: 3;
+}
+.btnTop {
+    z-index: 99;
+    position: absolute;
+    top: 30px;
+    right: 146px;
+    /* background-color: rgb(191, 213, 253); */
+    opacity: 40%;
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
 }
 .btnPower {
     z-index: 99;
     position: absolute;
     top: 273px;
     right: 0;
-    background-color: rgb(191, 213, 253);
+    /* background-color: rgb(191, 213, 253); */
     opacity: 40%;
     width: 30px;
     height: 50px;
@@ -703,7 +827,7 @@ body {
     position: absolute;
     top: 125px;
     right: 0;
-    background-color: rgb(191, 213, 253);
+    /* background-color: rgb(191, 213, 253); */
     opacity: 40%;
     width: 30px;
     height: 60px;
@@ -714,7 +838,7 @@ body {
     position: absolute;
     top: 190px;
     right: 0;
-    background-color: rgb(191, 213, 253);
+    /* background-color: rgb(191, 213, 253); */
     opacity: 40%;
     width: 30px;
     height: 60px;
