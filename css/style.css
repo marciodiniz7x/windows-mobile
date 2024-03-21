@@ -13,7 +13,6 @@ h1 {
 body {
     text-align: center;
     background: linear-gradient(90deg, rgb(0, 81, 255), rgb(0, 204, 255));
-    
 }
 
 .corpoAparelho {
@@ -22,21 +21,17 @@ body {
     z-index: 0;
 }
 
-
 .tela {
     border: 2px solid white;
     top: 60px;
     overflow: hidden;
     position: relative;
     width: 350px;
-    height: 740px;
-    
+    height: 740px; 
 }
 
 .telaDesl {
-    
     position: absolute;
-   
     width: 350px;
     height: 740px;
     background: linear-gradient(45deg, black, rgb(63, 62, 62));
@@ -46,16 +41,12 @@ body {
 /* LOCKSCREEN */
 .telaBlock {
     position: absolute;
-    
     background-image: url(../img/lockscreen05.png);
     background-size: 120%;
     background-repeat: no-repeat;
     width: 350px;
     height: 740px;
-
-   
     transition: 300ms;
-
 }
 
 .clock {
@@ -89,7 +80,6 @@ body {
     margin-top: 300px;
     width: 250px;
     height: 243px;
-   
     background-image: url(../img/musicPlayer.png);
     background-size: 100%;
     background-position: center;
@@ -149,9 +139,7 @@ body {
 /* --------------- */
 /* TELA INICIAL */
 .telaInicial {
-   
     position: absolute;
-    
     background-image: url(../img/wallpaper02.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -161,7 +149,6 @@ body {
 }
 
 .topIcons {
-    
     position: absolute;
     margin-top: 5px;
     margin-left: 22px;
@@ -171,10 +158,8 @@ body {
 }
 
 #iconWifi {
-    
     margin-top: -10px;
     width: 22px;
-    
 }
 #iconDados {
     margin-top: -10px;
@@ -195,7 +180,6 @@ body {
 .tela1 {
     overflow: hidden;
     margin-top: 25px;
-
     width: 340px;
     height: 535px;
     transition-duration: 300ms;
@@ -207,7 +191,7 @@ body {
     margin-top: 50px;
     width: 250px;
     height: 20px;
-    
+  
 }
 .volBaixo {
     position: absolute;
@@ -230,7 +214,6 @@ body {
 }
 .volProgress {
     position: absolute;
-    
     height: 10px;
     background-color: rgb(7, 106, 255);
     border-radius: 15px;
@@ -241,7 +224,6 @@ body {
 }
 
 .pesquisar {
-    
     align-items: center;
     text-align: left;
     z-index: 99;
@@ -258,7 +240,6 @@ body {
     box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
     font-size: 21px;
     color: black;
-   
 }
 .microphone {
     position: absolute;
@@ -268,7 +249,7 @@ body {
 }
 .bing {
     position: absolute;
- 
+
     top: 7px;
     width: 25px;
 }
@@ -288,7 +269,6 @@ body {
     height: 40px;
     border-radius: 25px;
     border: none;
-
     font-size: 21px;
     color: black;
 }
@@ -306,7 +286,6 @@ body {
 
 .widgetClima {
     opacity: 95%;
-    
     background: linear-gradient(45deg, rgb(0, 81, 255), rgb(60, 216, 255));
     width: 300px;
     height: 150px;
@@ -346,9 +325,7 @@ body {
     margin-top: 25px;
     margin-left: 50px;
     color: aliceblue;
-    
     border-radius: 10px;
-    
 }
 .locationIcon {
     margin-top: 5px;
@@ -360,11 +337,9 @@ body {
 .widgetAgenda {
     position: relative;
     opacity: 95%;
-    
     background-color: aliceblue;
     width: 140px;
     height: 140px;
-    
     border-radius: 15px;
 }
 
@@ -422,12 +397,10 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-
     background-image: url(../img/iconWhatsapp.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-
     border-radius: 15px;
     cursor: pointer;
 }
@@ -437,12 +410,10 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-
     background-image: url(../img/iconInstagram.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-
     border-radius: 15px;
     cursor: pointer;
 }
@@ -452,12 +423,10 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-
     background-image: url(../img/oneDrive.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-
     border-radius: 15px;
     cursor: pointer;
 }
@@ -478,14 +447,16 @@ body {
 }
 
 .tracosTela {
-    margin-top: 25px;
+    margin-top: 10px;
     color: white;
     display: flex;
     size: 4;
     width: 100px;
+    height: 25px;
     gap: 10px;
-    z-index: 99;
-    border: 1px solid;
+    z-index: 100;
+    position: relative;
+    align-items: center;
 }
 
 .tracos {
@@ -494,8 +465,8 @@ body {
     background-color: white;
     border-radius: 2px;
     cursor: pointer;
-    transition: 400ms;
-    
+    transition: 100ms;
+    align-items: center;
 }
 #traco1 {
     width: 24px;
@@ -525,7 +496,6 @@ body {
     width: 3px;
     height: 30px;
     background-color: rgb(28, 164, 255);
-
 }
 .back-tarefa1 {
     margin-top: -3px;
@@ -541,7 +511,6 @@ body {
     opacity: 100%;
     text-align: left;
     margin-left: 30px;
-
     font-weight: bolder;
     font-size: 12px;
     font-family: 'SF UI Display light';
@@ -562,7 +531,6 @@ body {
     width: 3px;
     height: 30px;
     background-color: rgb(8, 218, 120);
-
 }
 .back-tarefa2 {
     margin-top: 5px;
@@ -578,7 +546,6 @@ body {
     opacity: 100%;
     text-align: left;
     margin-left: 30px;
-   
     font-weight: bolder;
     font-size: 12px;
     font-family: 'SF UI Display light';
@@ -598,8 +565,7 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-top: 30px;
-    
+    margin-top: 20px;
     align-items: center;
     justify-content: space-evenly;
     width: 280px;

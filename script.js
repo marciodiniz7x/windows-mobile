@@ -34,6 +34,10 @@ const traco2 = document.querySelector('#traco2');
 const traco3 = document.querySelector('#traco3');
 const traco4 = document.querySelector('#traco4');
 
+// Botões de ação
+const actArrow = document.querySelector('.actarrow');
+const actWindows = document.querySelector('.actWindows');
+const actTask = document.querySelector('.actTask');
 
 // -------------------- //
 //////// Script /////////
@@ -167,11 +171,21 @@ const loopHora = setInterval(() => {
 
 // Script Trocar Tela
 
-traco1.addEventListener('click', function() {
+const tela1 = true;
+const tela2 = false;
+const tela3 = false;
+const tela4 = false;
+
+function irHome() {
+    // Função que leva à tela inicial
     traco1.style.width = "24px";
     traco2.style.width = "8px";
     traco3.style.width = "8px";
     traco4.style.width = "8px";
+}
+
+traco1.addEventListener('click', function() {
+    irHome();
 });
 
 traco2.addEventListener('click', function() {
@@ -194,4 +208,7 @@ traco4.addEventListener('click', function() {
     traco3.style.width = "8px";
     traco4.style.width = "24px";
 });
+
+// Script botões de ação inferiores
+actWindows.addEventListener('click', irHome);
 
