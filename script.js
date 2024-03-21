@@ -5,6 +5,8 @@ const telaDesl = document.querySelector('.telaDesl');
 const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
+const flexWidgets = document.querySelector('.flex-widgets');
+
 // Widgets
 const volProgress = document.querySelector('.volProgress');
 const volumeArea = document.querySelector('.volumeArea')
@@ -183,6 +185,12 @@ function irHome() {
     traco3.style.width = "8px";
     traco4.style.width = "8px";
 
+    flexWidgets.classList.add('rightRoll');
+    setTimeout(() => {
+        flexWidgets.classList.remove('rightRoll');
+        flexWidgets.style.left = '0px';
+    }, 400);
+
     ativaTela1 = true;
     ativaTela2 = false;
     ativaTela3 = false;
@@ -198,6 +206,12 @@ traco2.addEventListener('click', function() {
     traco2.style.width = "24px";
     traco3.style.width = "8px";
     traco4.style.width = "8px";
+
+    flexWidgets.classList.add('leftRoll');
+    setTimeout(() => {
+        flexWidgets.style.left = '-320px';
+        flexWidgets.classList.remove('leftRoll');
+    }, 400);
 
     ativaTela1 = false;
     ativaTela2 = true;

@@ -669,6 +669,14 @@ body {
     animation: abrirVert 400ms forwards;
 }
 
+.leftRoll {
+    animation: leftRoll 400ms forwards;
+}
+
+.rightRoll {
+    animation: rightRoll 400ms forwards;
+}
+
 @keyframes abrirHoriz {
     0% {
         width: 0px;
@@ -701,5 +709,25 @@ body {
 
     100% {
         top: -740px;
+    }
+}
+
+@keyframes leftRoll {
+    0%{
+        left: 0px;
+    }
+
+    100% {
+        left: -320px;
+    }
+}
+
+@keyframes rightRoll {
+    0%{
+        left: -320px;
+    }
+
+    100% {
+        left: 0px;
     }
 }
