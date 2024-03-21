@@ -171,10 +171,10 @@ const loopHora = setInterval(() => {
 
 // Script Trocar Tela
 
-const tela1 = true;
-const tela2 = false;
-const tela3 = false;
-const tela4 = false;
+const ativaTela1 = true;
+const ativaTela2 = false;
+const ativaTela3 = false;
+const ativaTela4 = false;
 
 function irHome() {
     // Função que leva à tela inicial
@@ -182,6 +182,11 @@ function irHome() {
     traco2.style.width = "8px";
     traco3.style.width = "8px";
     traco4.style.width = "8px";
+
+    ativaTela1 = true;
+    ativaTela2 = false;
+    ativaTela3 = false;
+    ativaTela4 = false;
 }
 
 traco1.addEventListener('click', function() {
@@ -193,6 +198,11 @@ traco2.addEventListener('click', function() {
     traco2.style.width = "24px";
     traco3.style.width = "8px";
     traco4.style.width = "8px";
+
+    ativaTela1 = false;
+    ativaTela2 = true;
+    ativaTela3 = false;
+    ativaTela4 = false;
 });
 
 traco3.addEventListener('click', function() {
@@ -200,6 +210,11 @@ traco3.addEventListener('click', function() {
     traco2.style.width = "8px";
     traco3.style.width = "24px";
     traco4.style.width = "8px";
+
+    ativaTela1 = false;
+    ativaTela2 = false;
+    ativaTela3 = true;
+    ativaTela4 = false;
 });
 
 traco4.addEventListener('click', function() {
@@ -207,6 +222,11 @@ traco4.addEventListener('click', function() {
     traco2.style.width = "8px";
     traco3.style.width = "8px";
     traco4.style.width = "24px";
+
+    ativaTela1 = false;
+    ativaTela2 = false;
+    ativaTela3 = false;
+    ativaTela4 = true;
 });
 
 // Script botões de ação inferiores

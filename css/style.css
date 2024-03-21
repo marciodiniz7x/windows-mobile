@@ -146,6 +146,7 @@ body {
     width: 350px;
     height: 740px;
     transition: 300ms;
+    left: -4px;
 }
 
 .topIcons {
@@ -179,11 +180,13 @@ body {
 
 .tela1 {
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 25px;
     width: 340px;
     height: 535px;
     transition-duration: 300ms;
-    
 }
 
 .volumeArea {
@@ -275,12 +278,15 @@ body {
 
 .flex-widgets {
     z-index: 99;
-    top: 100px;
+    top: 40px;
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    width: 300px;
+    width: 305px;
+    height: 420px;
     transition: 400ms;
 }
 
@@ -334,8 +340,20 @@ body {
     width: 12px;
 }
 
-.widgetAgenda {
+.flex-widgets-children {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: space-between;
     position: relative;
+    width: 141px;
+    height: 141px;
+
+}
+
+.widgetAgenda {
+    
     opacity: 95%;
     background-color: aliceblue;
     width: 140px;
@@ -367,8 +385,7 @@ body {
 }
 .widgetLigar {
     opacity: 95%;
-    margin-top: -80px;
-    margin-left: 160px;
+
     background-color: aliceblue;
     width: 60px;
     height: 60px;
@@ -380,7 +397,6 @@ body {
 }
 .widgetMensagem {
     opacity: 90%;
-    margin-top: -80px;
     background-color: aliceblue;
     width: 60px;
     height: 60px;
@@ -391,8 +407,16 @@ body {
     border-radius: 15px;
 }
 
+.flex-widgets-social {
+    display: flex;
+    align-items: space-between;
+    position: relative;
+    width: 300px;
+    gap: 20px;
+
+}
+
 .widgetWhatsapp {
-    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
@@ -405,7 +429,6 @@ body {
     cursor: pointer;
 }
 .widgetInstagram {
-    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
@@ -418,7 +441,6 @@ body {
     cursor: pointer;
 }
 .widgetMusic {
-    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
@@ -431,17 +453,14 @@ body {
     cursor: pointer;
 }
 .widgetYoutube {
-    margin-top: 15px;
     opacity: 95%;
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-
     background-image: url(../img/mail.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-
     border-radius: 15px;
     cursor: pointer;
 }
@@ -655,7 +674,7 @@ body {
         width: 0px;
     }
     100% {
-        width: 305px;
+        width: 335px;
     }
 }
 
