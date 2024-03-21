@@ -19,6 +19,7 @@ body {
 .corpoAparelho {
     margin-top: -700px;
     position: relative;
+    z-index: 0;
 }
 
 
@@ -481,8 +482,10 @@ body {
     color: white;
     display: flex;
     size: 4;
-    width: 80px;
+    width: 100px;
     gap: 10px;
+    z-index: 99;
+    border: 1px solid;
 }
 
 .tracos {
@@ -492,20 +495,18 @@ body {
     border-radius: 2px;
     cursor: pointer;
     transition: 400ms;
+    
 }
 #traco1 {
     width: 24px;
 }
 
-
 /* Calendário */
 .diaSemana {
     text-align: left;
     margin-left: 20px;
-    margin-top: 5px;
-    
-    color: rgb(28, 126, 255);
-    
+    margin-top: 5px; 
+    color: rgb(28, 126, 255);  
     font-size: 12px;
     font-family: 'SF UI Display light';
 }
@@ -513,9 +514,6 @@ body {
     text-align: left;
     margin-left: 20px;
     margin-top: -10px;
-    
-
-
     font-size: 35px;
     font-family: 'SF UI Display';
 }
@@ -625,11 +623,10 @@ body {
     left: 50%;
     transform: translateX(-50%);
     top: 102px;
-    
     position: absolute;
     width: 420px;
     height: 800px;
-    
+    z-index: 0;
 }
 .btnPower {
     z-index: 99;

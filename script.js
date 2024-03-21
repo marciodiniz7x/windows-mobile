@@ -27,6 +27,7 @@ const clockClima = document.querySelector('.clockClima');
 const dataCalendario = document.querySelector('.data');
 
 // Traços Telas
+const tracosTela = document.querySelector('.tracosTela');
 const tracos = document.querySelector('.tracos');
 const traco1 = document.querySelector('#traco1');
 const traco2 = document.querySelector('#traco2');
@@ -165,31 +166,32 @@ const loopHora = setInterval(() => {
 }, 100);
 
 // Script Trocar Tela
+
 traco1.addEventListener('click', function() {
     traco1.style.width = "24px";
     traco2.style.width = "8px";
     traco3.style.width = "8px";
     traco4.style.width = "8px";
-})
+});
 
 traco2.addEventListener('click', function() {
     traco1.style.width = "8px";
     traco2.style.width = "24px";
     traco3.style.width = "8px";
     traco4.style.width = "8px";
-})
+});
 
 traco3.addEventListener('click', function() {
     traco1.style.width = "8px";
     traco2.style.width = "8px";
     traco3.style.width = "24px";
     traco4.style.width = "8px";
-})
+});
 
 traco4.addEventListener('click', function() {
     traco1.style.width = "8px";
     traco2.style.width = "8px";
     traco3.style.width = "8px";
     traco4.style.width = "24px";
-})
+});
 
