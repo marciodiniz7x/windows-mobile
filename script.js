@@ -6,6 +6,8 @@ const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
 
 const flexWidgets = document.querySelector('.flex-widgets');
+const flexWidgets2 = document.querySelector('.flex-widgets2');
+
 
 // Widgets
 const volProgress = document.querySelector('.volProgress');
@@ -44,6 +46,19 @@ const actTask = document.querySelector('.actTask');
 // -------------------- //
 //////// Script /////////
 
+function setarInicio() {
+    flexWidgets2.classList.remove('sumir');
+    flexWidgets.style.top = '200px';
+    flexWidgets.style.position = 'absolute';
+    
+}
+
+function desativarInicio() {
+    flexWidgets2.classList.remove('sumir');
+    flexWidgets.style.position = 'relative';
+    flexWidgets.style.top = '500px'
+}
+
 let telaDesligada = true;
 let telaDeBloqueio = false;
 let telaInicialLigada = false;
@@ -59,6 +74,7 @@ btnPower.addEventListener('click', () => {
         telaInicial.classList.add('sumir');
         telaDesligada = true;
     }
+    desativarInicio();
 });
 
 let contadorVolume = 0;
@@ -95,10 +111,12 @@ btnMenos.addEventListener('click', () => {
 });
 
 cadeado.addEventListener('click', () => {
+    
     telaDeBloqueio = false;
     telaBlock.classList.add('abrirVert');
     setTimeout(() => {
         cadeado.classList.add('sumir');
+        setarInicio();
     }, 100);
     setTimeout(() => {
         telaBlock.classList.add('sumir');
@@ -108,7 +126,7 @@ cadeado.addEventListener('click', () => {
     telaInicialLigada = true;
     telaInicial.classList.remove('sumir');
 
-})
+});
 
 digitar.addEventListener('focusin', () => {
     iconesPesquisa.classList.add('sumir');
@@ -176,25 +194,24 @@ const loopHora = setInterval(() => {
 const ativaTela1 = true;
 const ativaTela2 = false;
 const ativaTela3 = false;
-const ativaTela4 = false;
 
 function irHome() {
     // Função que leva à tela inicial
     traco1.style.width = "24px";
     traco2.style.width = "8px";
     traco3.style.width = "8px";
-    traco4.style.width = "8px";
 
-    flexWidgets.classList.add('rightRoll');
+    flexWidgets2.classList.add('centerRight');
     setTimeout(() => {
-        flexWidgets.classList.remove('rightRoll');
-        flexWidgets.style.left = '0px';
+        flexWidgets2.classList.remove('centerRight');
     }, 400);
 
-    ativaTela1 = true;
-    ativaTela2 = false;
-    ativaTela3 = false;
-    ativaTela4 = false;
+    flexWidgets.classList.add('leftCenter');
+    setTimeout(() => {
+        flexWidgets.classList.remove('leftCenter');
+        flexWidgets.style.left = '';
+    }, 400);
+
 }
 
 traco1.addEventListener('click', function() {
@@ -205,42 +222,28 @@ traco2.addEventListener('click', function() {
     traco1.style.width = "8px";
     traco2.style.width = "24px";
     traco3.style.width = "8px";
-    traco4.style.width = "8px";
 
-    flexWidgets.classList.add('leftRoll');
+    flexWidgets.classList.add('centerLeft');
     setTimeout(() => {
         flexWidgets.style.left = '-320px';
-        flexWidgets.classList.remove('leftRoll');
+        flexWidgets.classList.remove('centerLeft');
     }, 400);
-
-    ativaTela1 = false;
-    ativaTela2 = true;
-    ativaTela3 = false;
-    ativaTela4 = false;
+    
+    flexWidgets2.classList.add('rightCenter');
 });
 
 traco3.addEventListener('click', function() {
     traco1.style.width = "8px";
     traco2.style.width = "8px";
     traco3.style.width = "24px";
-    traco4.style.width = "8px";
 
-    ativaTela1 = false;
-    ativaTela2 = false;
-    ativaTela3 = true;
-    ativaTela4 = false;
 });
 
 traco4.addEventListener('click', function() {
     traco1.style.width = "8px";
     traco2.style.width = "8px";
     traco3.style.width = "8px";
-    traco4.style.width = "24px";
 
-    ativaTela1 = false;
-    ativaTela2 = false;
-    ativaTela3 = false;
-    ativaTela4 = true;
 });
 
 // Script botões de ação inferiores

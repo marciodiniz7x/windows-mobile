@@ -186,7 +186,7 @@ body {
     margin-top: 25px;
     width: 340px;
     height: 535px;
-    transition-duration: 300ms;
+    transition-duration: 400ms;
 }
 
 .volumeArea {
@@ -278,7 +278,7 @@ body {
 
 .flex-widgets {
     z-index: 99;
-    top: 40px;
+    top: 500px;
     position: relative;
     display: flex;
     align-items: center;
@@ -288,6 +288,7 @@ body {
     width: 305px;
     height: 420px;
     transition: 400ms;
+ 
 }
 
 .widgetClima {
@@ -465,12 +466,86 @@ body {
     cursor: pointer;
 }
 
+/* Tela 2 */
+.flex-widgets2 {
+    z-index: 99;
+    top: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 305px;
+    height: 420px;
+    transition: 400ms;
+    left: 320px;
+    border: 1px solid;
+}
+.news {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+.news .texto {
+    width: 170px;
+}
+
+.news p {
+    font-size: 12px;
+    font-style: italic;
+}
+.news .imagem {
+    width: 80px;
+    height: 90px;
+}
+.imagem-noticias {
+    background-image: url(../img/noticias.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imagem-esportes {
+    background-image: url(../img/esportes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imagem-games {
+    background-image: url(../img/games.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.news1 {
+    width: 300px;
+    height: 120px;
+    background-color: rgb(31, 29, 29);
+    border-radius: 15px;
+}
+.news2 {
+    width: 300px;
+    height: 120px;
+    background-color: rgb(21, 179, 21);
+    border-radius: 15px;
+}
+.news3 {
+    width: 300px;
+    height: 120px;
+    background-color: rgb(142, 33, 231);
+    border-radius: 15px;
+}
+
 .tracosTela {
+    left: -1px;
     margin-top: 10px;
     color: white;
     display: flex;
     size: 4;
-    width: 100px;
+    width: 70px;
     height: 25px;
     gap: 10px;
     z-index: 100;
@@ -669,12 +744,20 @@ body {
     animation: abrirVert 400ms forwards;
 }
 
-.leftRoll {
-    animation: leftRoll 400ms forwards;
+.centerLeft {
+    animation: centerLeft 400ms forwards;
 }
 
-.rightRoll {
-    animation: rightRoll 400ms forwards;
+.leftCenter {
+    animation: leftCenter 400ms forwards;
+}
+
+.rightCenter {
+    animation: rightCenter 400ms forwards;
+}
+
+.centerRight {
+    animation: centerRight 400ms forwards;
 }
 
 @keyframes abrirHoriz {
@@ -712,7 +795,7 @@ body {
     }
 }
 
-@keyframes leftRoll {
+@keyframes centerLeft {
     0%{
         left: 0px;
     }
@@ -722,12 +805,32 @@ body {
     }
 }
 
-@keyframes rightRoll {
+@keyframes leftCenter {
     0%{
         left: -320px;
     }
 
     100% {
         left: 0px;
+    }
+}
+
+@keyframes rightCenter {
+    0%{
+        left: 320px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes centerRight {
+    0%{
+        left: 0px;
+    }
+
+    100% {
+        left: 320px;
     }
 }
