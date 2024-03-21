@@ -154,7 +154,7 @@ body {
     margin-top: 5px;
     margin-left: 22px;
     transition-delay: 300ms;
-    animation: descer 600ms;
+    animation: descer 400ms;
     
 }
 
@@ -180,13 +180,11 @@ body {
 
 .tela1 {
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 25px;
+
     width: 340px;
     height: 535px;
-    transition-duration: 400ms;
+    transition-duration: 300ms;
 }
 
 .volumeArea {
@@ -243,6 +241,7 @@ body {
     box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
     font-size: 21px;
     color: black;
+    transition: 400ms;
 }
 .microphone {
     position: absolute;
@@ -278,7 +277,7 @@ body {
 
 .flex-widgets {
     z-index: 99;
-    top: 500px;
+    top: 100px;
     position: relative;
     display: flex;
     align-items: center;
@@ -288,7 +287,7 @@ body {
     width: 305px;
     height: 420px;
     transition: 400ms;
- 
+    left: '';
 }
 
 .widgetClima {
@@ -469,7 +468,7 @@ body {
 /* Tela 2 */
 .flex-widgets2 {
     z-index: 99;
-    top: 40px;
+    top: -320px;
     position: relative;
     display: flex;
     align-items: center;
@@ -480,7 +479,7 @@ body {
     height: 420px;
     transition: 400ms;
     left: 320px;
-    border: 1px solid;
+ 
 }
 .news {
     display: flex;

@@ -46,18 +46,18 @@ const actTask = document.querySelector('.actTask');
 // -------------------- //
 //////// Script /////////
 
-function setarInicio() {
-    flexWidgets2.classList.remove('sumir');
-    flexWidgets.style.top = '200px';
-    flexWidgets.style.position = 'absolute';
+// function setarInicio() {
+//     flexWidgets2.classList.remove('sumir');
+//     flexWidgets.style.top = '200px';
+//     flexWidgets.style.position = 'absolute';
     
-}
+// }
 
-function desativarInicio() {
-    flexWidgets2.classList.remove('sumir');
-    flexWidgets.style.position = 'relative';
-    flexWidgets.style.top = '500px'
-}
+// function desativarInicio() {
+//     flexWidgets2.classList.remove('sumir');
+//     flexWidgets.style.position = 'relative';
+//     flexWidgets.style.top = '500px'
+// }
 
 let telaDesligada = true;
 let telaDeBloqueio = false;
@@ -114,6 +114,14 @@ cadeado.addEventListener('click', () => {
     
     telaDeBloqueio = false;
     telaBlock.classList.add('abrirVert');
+
+    // Barra de pesquisa
+    pesquisar.style.top = '-100px';
+    setTimeout(() => {
+        pesquisar.style.top = '100px';
+        
+    }, 10);
+
     setTimeout(() => {
         cadeado.classList.add('sumir');
         setarInicio();
@@ -195,7 +203,7 @@ const ativaTela1 = true;
 const ativaTela2 = false;
 const ativaTela3 = false;
 
-function irHome() {
+const irHome = () => {
     // Função que leva à tela inicial
     traco1.style.width = "24px";
     traco2.style.width = "8px";
@@ -204,6 +212,7 @@ function irHome() {
     flexWidgets2.classList.add('centerRight');
     setTimeout(() => {
         flexWidgets2.classList.remove('centerRight');
+        flexWidgets2.style.left = '320px';
     }, 400);
 
     flexWidgets.classList.add('leftCenter');
@@ -214,9 +223,8 @@ function irHome() {
 
 }
 
-traco1.addEventListener('click', function() {
-    irHome();
-});
+traco1.addEventListener('click', irHome);
+actWindows.addEventListener('click', irHome);
 
 traco2.addEventListener('click', function() {
     traco1.style.width = "8px";
@@ -230,6 +238,10 @@ traco2.addEventListener('click', function() {
     }, 400);
     
     flexWidgets2.classList.add('rightCenter');
+    setTimeout(() => {
+        flexWidgets2.classList.remove('rightCenter');
+        flexWidgets2.style.left = '0px';
+    }, 400);
 });
 
 traco3.addEventListener('click', function() {
@@ -245,7 +257,4 @@ traco4.addEventListener('click', function() {
     traco3.style.width = "8px";
 
 });
-
-// Script botões de ação inferiores
-actWindows.addEventListener('click', irHome);
 
