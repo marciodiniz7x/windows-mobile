@@ -22,6 +22,8 @@ const cadeado = document.querySelector('.cadeado');
 const imgLuaSol = document.querySelector('.climaLuaSol');
 
 // Botões Físicos
+const botoesFisicos = document.querySelector('.botoesFisicos');
+const btnFisicos = document.querySelector('.btnFisicos');
 const btnTop = document.querySelector('.btnTop');
 const btnPower = document.querySelector('.btnPower');
 const btnMais = document.querySelector('.btnMais');
@@ -51,17 +53,55 @@ const actTask = document.querySelector('.actTask');
 // -------------------- //
 //////// Script /////////
 
+// Barra de Notificações
+
 let barraDrop = false;
 btnTop.addEventListener('click', () => {
     if (barraDrop === false) {
+        setTimeout(() => {
+            pesquisar.classList.add('sumir');
+        }, 100);
+        
         barraNotif.style.top = '-1px';
         topIcons.style.color = '#292929';
+        
         barraDrop = true
     } else if (barraDrop === true) {
+        setTimeout(() => {
+            pesquisar.classList.remove('sumir');
+        }, 100);
         barraNotif.style.top = '-200px';
         topIcons.style.color = '#f0f8ff';
+        
         barraDrop = false;
     }
+});
+
+
+
+// Função para alternar estilos
+function ligaDesligaNotif(elemento) {
+    // Obtém a cor de fundo atual do elementoo
+    const computedStyle = window.getComputedStyle(elemento);
+    const backgroundColor = computedStyle.backgroundColor;
+  
+    // Verifica se a cor de fundo atual é a cor inicial
+    if (backgroundColor === 'rgb(184, 191, 212)') {
+      // Se a cor atual for a cor inicial, muda para a cor desejada
+      elemento.style.backgroundColor = 'rgb(0, 110, 255)';
+      elemento.style.color = 'white';
+    } else {
+      // Se a cor atual não for a cor inicial, restaura para a cor inicial
+      elemento.style.backgroundColor = '#b8bfd4';
+      elemento.style.color = 'rgb(77, 77, 77)';
+    }
+  }
+
+const circleToToggle = document.querySelectorAll('.circleToToggle');
+circleToToggle.forEach(function(elemento) {
+    elemento.addEventListener('click', () => {
+        ligaDesligaNotif(elemento);
+    });
 });
 
 let telaDesligada = true;

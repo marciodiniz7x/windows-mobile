@@ -19,21 +19,26 @@ body {
     margin-top: -700px;
     position: relative;
     z-index: 6;
+    display: none;
 }
 
 .tela {
-    border: 2px solid white;
+    border: 5px solid #292929;
+    background-image: url(../img/lockscreen05.png);
     top: 60px;
     overflow: hidden;
     position: relative;
-    width: 350px;
-    height: 740px; 
+    width: 355px;
+    height: 745px; 
+    border-radius: 25px;
+    box-shadow: 1px 1px 40px 0px rgb(0, 0, 0);
+ 
 }
 
 .telaDesl {
     position: absolute;
-    width: 350px;
-    height: 740px;
+    width: 365px;
+    height: 760px;
     background: linear-gradient(45deg, black, rgb(63, 62, 62));
 }
 
@@ -44,8 +49,8 @@ body {
     background-image: url(../img/lockscreen05.png);
     background-size: 120%;
     background-repeat: no-repeat;
-    width: 350px;
-    height: 740px;
+    width: 360px;
+    height: 750px;
     transition: 300ms;
 }
 
@@ -153,11 +158,11 @@ body {
     position: absolute;
     display: flex;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 28px;
+    margin-top: 7px;
+    margin-left: 25px;
     transition-delay: 200ms;
     animation: descer 400ms;
-    z-index: 2;
+    z-index: 6;
     color: #f0f8ff;
     transition-duration: 300ms;
 }
@@ -179,24 +184,22 @@ body {
     margin-top: -10px;
     margin-left: 4px;
     width: 25px;
-    font-size: 30px;
+    font-size: 18px;
     
 }
 
-#alarmClock {
-    margin-top: -10px;
-    margin-left: 145px;
-    width: 25px;
+#extraIcon {
+    margin-top: -6px;
+    margin-left: 154px;
+    width: 20px;
     font-size: 20px;
     
 }
 #clockTime {
-    
-    margin-top: -10px;
-    margin-left: 5px;
+    margin-top: -6px;
+    margin-left: 10px;
     width: 25px;
-    font-size: 20px;
-    
+    font-size: 18px;
 }
 .clockNotif {
     z-index: 99;
@@ -207,7 +210,7 @@ body {
 .tela1 {
     overflow: hidden;
     margin-top: 25px;
-
+    
     width: 340px;
     height: 535px;
     transition-duration: 300ms;
@@ -220,7 +223,7 @@ body {
     background-color: aliceblue;
     box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
     border-radius: 15px;
-    width: 340px;
+    width: 343px;
     height: 200px;
     z-index: 5;
     transition: 280ms;
@@ -236,6 +239,7 @@ body {
     font-size: 14px;
     text-align: left;
     padding: 10px;
+    z-index: 5;
 }
 
 .separador {
@@ -247,6 +251,7 @@ body {
 .ativaIcon {
     display: flex;
     gap: 10px;
+    z-index: 8;
 }
 
 .circle {
@@ -256,30 +261,17 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
 }
-.circleWifi {
-    background-color: rgb(0, 110, 255);
+/* .circleWifi {
+    background-color: #006eff;
     color: white;
-}
-.circleDisturb {
-    background-color: rgb(184, 191, 212);
-    color: rgb(77, 77, 77);
-}
-.circleDados {
-    background-color: rgb(184, 191, 212);
-    color: rgb(77, 77, 77);
-}
-.circleBlue {
-    background-color: rgb(184, 191, 212);
-    color: rgb(77, 77, 77);
-}
-.circleEcono {
-    background-color: rgb(0, 110, 255);
-    color: white;
-}
-.circleFlash {
-    background-color: rgb(184, 191, 212);
-    color: rgb(77, 77, 77);
+} */
+.circleToToggle {
+    background-color: #b8bfd4;
+    color: #4d4d4d;
+    transition: 400ms;
 }
 
 .msgNotif {
@@ -340,7 +332,7 @@ body {
 .pesquisar {
     align-items: center;
     text-align: left;
-    z-index: 4;
+    z-index: 8;
     padding: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -354,7 +346,7 @@ body {
     box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
     font-size: 21px;
     color: black;
-    transition: 400ms;
+    transition: 200ms;
 }
 .microphone {
     position: absolute;
@@ -791,61 +783,67 @@ body {
 
 /* --------------- */
 /* BOTÕES */
-.botoesFisicos {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 102px;
-    position: absolute;
-    width: 420px;
-    height: 800px;
-    z-index: 7;
-}
 .btnTop {
     z-index: 100;
-    position: absolute;
-    top: 30px;
-    right: 146px;
-    /* background-color: rgb(191, 213, 253); */
-    opacity: 40%;
+    position: relative;
+    top: -685px;
+    right: 0px;
+    background-color: #292929;
+
     width: 130px;
     height: 30px;
     cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
 }
-.btnPower {
-    z-index: 99;
+
+.botoesFisicos {
+    /* Área que contém os botões físicos */
+    right: 255px;
+    transform: translateX(-50%);
+    top: 222px;
     position: absolute;
-    top: 273px;
-    right: 0;
-    /* background-color: rgb(191, 213, 253); */
-    opacity: 40%;
     width: 30px;
-    height: 50px;
-    cursor: pointer;
+    height: 275px;
+    z-index: 7;
 }
+
+.btnFisicos {
+    /* Classe compartilhada por todos os botões físicos */
+}
+
 .btnMais {
-    z-index: 99;
     position: absolute;
-    top: 125px;
-    right: 0;
-    /* background-color: rgb(191, 213, 253); */
-    opacity: 40%;
-    width: 30px;
-    height: 60px;
+    top: 0px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #292929;
+    width: 25px;
+    height: 70px;
     cursor: pointer;
 }
 .btnMenos {
-    z-index: 99;
     position: absolute;
-    top: 190px;
-    right: 0;
-    /* background-color: rgb(191, 213, 253); */
-    opacity: 40%;
-    width: 30px;
-    height: 60px;
+    top: 80px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #292929;
+    width: 25px;
+    height: 70px;
     cursor: pointer;
 }
 
-
+.btnPower {
+    position: absolute;
+    top: 200px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #292929;
+    width: 25px;
+    height: 70px;
+    cursor: pointer;
+}
 
 /* SUMIR OBJETOS */
 .sumir {
