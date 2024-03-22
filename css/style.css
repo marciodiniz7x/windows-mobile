@@ -18,7 +18,7 @@ body {
 .corpoAparelho {
     margin-top: -700px;
     position: relative;
-    z-index: 2;
+    z-index: 6;
 }
 
 .tela {
@@ -222,7 +222,7 @@ body {
     border-radius: 15px;
     width: 340px;
     height: 200px;
-    z-index: 1;
+    z-index: 5;
     transition: 280ms;
     
 }
@@ -340,7 +340,7 @@ body {
 .pesquisar {
     align-items: center;
     text-align: left;
-    z-index: 0;
+    z-index: 4;
     padding: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -798,10 +798,10 @@ body {
     position: absolute;
     width: 420px;
     height: 800px;
-    z-index: 3;
+    z-index: 7;
 }
 .btnTop {
-    z-index: 99;
+    z-index: 100;
     position: absolute;
     top: 30px;
     right: 146px;
