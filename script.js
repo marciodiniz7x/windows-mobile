@@ -1,6 +1,7 @@
 // ---- Seletor de Elementos ---- //
 
 // Telas
+const tela = document.querySelector('.tela');
 const telaDesl = document.querySelector('.telaDesl');
 const telaBlock = document.querySelector('.telaBlock');
 const telaInicial = document.querySelector('.telaInicial');
@@ -77,30 +78,98 @@ btnTop.addEventListener('click', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const circle = document.querySelectorAll('.circle');
+    const iconNoti = document.querySelectorAll('.iconNoti');
 
+    // Wifi
+    circle[0].addEventListener('click', function() {
+        const corAtual = getComputedStyle(this).backgroundColor;
 
-// Função para alternar estilos
-function ligaDesligaNotif(elemento) {
-    // Obtém a cor de fundo atual do elementoo
-    const computedStyle = window.getComputedStyle(elemento);
-    const backgroundColor = computedStyle.backgroundColor;
-  
-    // Verifica se a cor de fundo atual é a cor inicial
-    if (backgroundColor === 'rgb(184, 191, 212)') {
-      // Se a cor atual for a cor inicial, muda para a cor desejada
-      elemento.style.backgroundColor = 'rgb(0, 110, 255)';
-      elemento.style.color = 'white';
-    } else {
-      // Se a cor atual não for a cor inicial, restaura para a cor inicial
-      elemento.style.backgroundColor = '#b8bfd4';
-      elemento.style.color = 'rgb(77, 77, 77)';
-    }
-  }
+        if (corAtual === 'rgb(184, 191, 212)') {
+            circle[0].style.backgroundColor = '#006eff';
+            circle[0].style.color = '#ffffff';
+            iconNoti[0].innerHTML = 'signal_wifi_4_bar';
+        } else {
+            circle[0].style.backgroundColor = '#b8bfd4';
+            circle[0].style.color = '#4d4d4d';
+            iconNoti[0].innerHTML = 'signal_wifi_off';
+        }
+    });
 
-const circleToToggle = document.querySelectorAll('.circleToToggle');
-circleToToggle.forEach(function(elemento) {
-    elemento.addEventListener('click', () => {
-        ligaDesligaNotif(elemento);
+    // Não Perturbe
+    circle[1].addEventListener('click', function() {
+        const corAtual = getComputedStyle(this).backgroundColor
+        if (corAtual === 'rgb(184, 191, 212)') {
+            circle[1].style.backgroundColor = '#006eff';
+            circle[1].style.color = '#ffffff';
+            iconNoti[3].innerHTML = 'do_not_disturb_on';
+            
+        } else {
+            circle[1].style.backgroundColor = '#b8bfd4';
+            circle[1].style.color = '#4d4d4d';
+            iconNoti[3].innerHTML = '';
+        }
+    });
+
+    // Dados Móveis
+    circle[2].addEventListener('click', function() {
+        const corAtual = getComputedStyle(this).backgroundColor;
+        
+        if (corAtual === 'rgb(184, 191, 212)') {
+            circle[2].style.backgroundColor = '#006eff';
+            circle[2].style.color = '#ffffff';
+            iconNoti[1].innerHTML = 'signal_cellular_3_bar';
+        } else {
+            circle[2].style.backgroundColor = '#b8bfd4';
+            circle[2].style.color = '#4d4d4d';
+            iconNoti[1].innerHTML = 'signal_cellular_off';
+        }
+    });
+
+    // Bluetooth
+    circle[3].addEventListener('click', function() {
+        const corAtual = getComputedStyle(this).backgroundColor
+        if (corAtual === 'rgb(184, 191, 212)') {
+            circle[3].style.backgroundColor = '#006eff';
+            circle[3].style.color = '#ffffff';
+            iconNoti[4].innerHTML = 'bluetooth';
+            
+        } else {
+            circle[3].style.backgroundColor = '#b8bfd4';
+            circle[3].style.color = '#4d4d4d';
+            iconNoti[4].innerHTML = '';
+        }
+    });
+
+    // Bateria
+    circle[4].addEventListener('click', function() {
+        const corAtual = getComputedStyle(this).backgroundColor
+        if (corAtual === 'rgb(184, 191, 212)') {
+            circle[4].style.backgroundColor = '#006eff';
+            circle[4].style.color = '#ffffff';
+            iconNoti[2].innerHTML = 'battery_saver';
+            
+        } else {
+            circle[4].style.backgroundColor = '#b8bfd4';
+            circle[4].style.color = '#4d4d4d';
+            iconNoti[2].innerHTML = 'battery_5_bar';
+        }
+    });
+    // Bateria
+    circle[5].addEventListener('click', function() {
+        const corAtual = getComputedStyle(this).backgroundColor
+        if (corAtual === 'rgb(184, 191, 212)') {
+            circle[5].style.backgroundColor = '#006eff';
+            circle[5].style.color = '#ffffff';
+            tela.style.boxShadow = '1px 1px 60px 20px rgb(224, 170, 23)';
+            
+        } else {
+            circle[5].style.backgroundColor = '#b8bfd4';
+            circle[5].style.color = '#4d4d4d';
+            iconNoti[2].innerHTML = 'battery_5_bar';
+            tela.style.boxShadow = '1px 1px 40px 0px rgb(0, 0, 0)';
+        }
     });
 });
 

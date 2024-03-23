@@ -32,7 +32,7 @@ body {
     height: 745px; 
     border-radius: 25px;
     box-shadow: 1px 1px 40px 0px rgb(0, 0, 0);
- 
+    transition: 400ms;
 }
 
 .telaDesl {
@@ -167,37 +167,44 @@ body {
     transition-duration: 300ms;
 }
 
-#iconWifi {
+.iconWifi {
     margin-top: -10px;
     width: 22px;
     font-size: 20px;
     
 }
-#iconDados {
+.iconDados {
     margin-top: -10px;
     margin-left: 3px;
-    width: 18px;
+    width: 22px;
     font-size: 20px;
     
 }
-#iconBateria {
+.iconBateria {
     margin-top: -10px;
     margin-left: 4px;
     width: 25px;
-    font-size: 18px;
+    font-size: 20px;
     
 }
 
-#extraIcon {
+.extraIcon {
     margin-top: -6px;
-    margin-left: 154px;
+    margin-left: 145px;
     width: 20px;
-    font-size: 20px;
+    font-size: 17px;
+    
+}
+.iconBlue {
+    margin-top: -6px;
+    margin-left: 0px;
+    width: 20px;
+    font-size: 17px;
     
 }
 #clockTime {
     margin-top: -6px;
-    margin-left: 10px;
+    margin-left: 4px;
     width: 25px;
     font-size: 18px;
 }
@@ -264,14 +271,22 @@ body {
     cursor: pointer;
     z-index: 10;
 }
-/* .circleWifi {
-    background-color: #006eff;
-    color: white;
-} */
+
+
 .circleToToggle {
     background-color: #b8bfd4;
     color: #4d4d4d;
     transition: 400ms;
+}
+
+.circleWifi {
+    background-color: #006eff;
+    color: #ffffff;
+}
+
+.circleDados {
+    background-color: #006eff;
+    color: #ffffff;
 }
 
 .msgNotif {
@@ -786,10 +801,9 @@ body {
 .btnTop {
     z-index: 100;
     position: relative;
-    top: -685px;
+    top: -960px;
     right: 0px;
     background-color: #292929;
-
     width: 130px;
     height: 30px;
     cursor: pointer;
@@ -802,8 +816,9 @@ body {
     /* Área que contém os botões físicos */
     right: 255px;
     transform: translateX(-50%);
-    top: 222px;
-    position: absolute;
+    top: -600px;
+    left: 205px;
+    position: relative;
     width: 30px;
     height: 275px;
     z-index: 7;
@@ -811,9 +826,18 @@ body {
 
 .btnFisicos {
     /* Classe compartilhada por todos os botões físicos */
+    display: flex;
+    align-items: center;
+    color: rgb(121, 119, 119);
+    
+}
+
+.btnFisicos span {
+    font-size: 1.2em;
 }
 
 .btnMais {
+    
     position: absolute;
     top: 0px;
     border-bottom-right-radius: 15px;
