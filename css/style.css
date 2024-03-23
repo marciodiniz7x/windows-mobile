@@ -224,18 +224,35 @@ body {
 }
 
 .barra-notif {
-    top: -200px;
+    top: -220px;
     left: 5px;
     position: absolute;
     background-color: aliceblue;
     box-shadow: 1px 1px 10px 1px rgba(49, 48, 48, 0.3);
     border-radius: 15px;
     width: 343px;
-    height: 200px;
+    height: 220px;
     z-index: 5;
     transition: 280ms;
-    
 }
+
+.keyboard {
+    bottom: -300px;
+    left: 5px;
+    position: absolute;
+    background-image: url(../img/teclado.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 50px 5px rgba(12, 135, 250, 0.822);
+    border-radius: 9px;
+    width: 343px;
+    height: 300px;
+    z-index: 5;
+    transition: 280ms;
+    z-index: 99;
+}
+
 .notifContent {
     display: flex;
     flex-direction: column;
@@ -253,6 +270,22 @@ body {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.185);
     height: 1px;
     width: 315px;
+    margin-top: 10px;
+}
+.separador2 {
+    width: 315px;
+    display: flex;
+    align-items: center;
+}
+
+.miniSep {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.185);
+    height: 1px;
+    flex: 1;
+}
+
+.explorar {
+    margin: 0 10px;
 }
 
 .ativaIcon {
@@ -261,13 +294,48 @@ body {
     z-index: 8;
 }
 
+.msIcon {
+    margin-top: 15px;
+    display: flex;
+    gap: 24px;
+    z-index: 8;
+}
+
+.msIconAll {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: -4px;
+    border-radius: 12px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 400ms;
+}
+
+.msCopilot {
+    margin-top: -16px;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.msRewards, .msXbox, .msConfigs, .msCode {
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .circle {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+    border-radius: 12px;
     cursor: pointer;
     z-index: 10;
 }
@@ -294,6 +362,8 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 320px;
+    
+
 }
 .whatsappContent, .instagramContent {
     display: flex;
@@ -396,7 +466,7 @@ body {
 }
 
 .flex-widgets {
-    z-index: 99;
+    z-index: 4;
     top: 100px;
     position: relative;
     display: flex;
@@ -410,12 +480,17 @@ body {
     left: '';
 }
 
+.widgetgeral {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.137);
+    border-radius: 9px;
+}
+
 .widgetClima {
     opacity: 95%;
     background: linear-gradient(45deg, rgb(0, 81, 255), rgb(60, 216, 255));
     width: 300px;
     height: 150px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 .climaLuaSol {
     opacity: 90%;
@@ -449,7 +524,7 @@ body {
 }
 .cidade {
     margin-top: 25px;
-    margin-left: 50px;
+    margin-left: 110px;
     color: aliceblue;
     border-radius: 10px;
 }
@@ -478,7 +553,6 @@ body {
     background-color: aliceblue;
     width: 140px;
     height: 140px;
-    border-radius: 15px;
 }
 
 .widgetStore {
@@ -490,7 +564,7 @@ body {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
+
 }
 .widgetCamera {
     opacity: 95%;
@@ -501,7 +575,7 @@ body {
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
+
 }
 .widgetLigar {
     opacity: 95%;
@@ -513,7 +587,7 @@ body {
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
+
 }
 .widgetMensagem {
     opacity: 90%;
@@ -524,7 +598,7 @@ body {
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
+
 }
 
 .flex-widgets-social {
@@ -545,7 +619,7 @@ body {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
+
     cursor: pointer;
 }
 .widgetInstagram {
@@ -557,7 +631,6 @@ body {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
     cursor: pointer;
 }
 .widgetMusic {
@@ -569,7 +642,6 @@ body {
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
     cursor: pointer;
 }
 .widgetYoutube {
@@ -581,7 +653,6 @@ body {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -607,6 +678,7 @@ body {
     color: white;
     text-align: left;
     padding: 10px;
+    border-radius: 9px;
 }
 .news .texto {
     width: 170px;
@@ -643,19 +715,16 @@ body {
     width: 300px;
     height: 120px;
     background-color: rgb(31, 29, 29);
-    border-radius: 15px;
 }
 .news2 {
     width: 300px;
     height: 120px;
     background-color: rgb(21, 179, 21);
-    border-radius: 15px;
 }
 .news3 {
     width: 300px;
     height: 120px;
     background-color: rgb(142, 33, 231);
-    border-radius: 15px;
 }
 
 .tracosTela {

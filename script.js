@@ -9,9 +9,9 @@ const telaInicial = document.querySelector('.telaInicial');
 const flexWidgets = document.querySelector('.flex-widgets');
 const flexWidgets2 = document.querySelector('.flex-widgets2');
 
-
 // Widgets
 const barraNotif = document.querySelector('.barra-notif');
+const keyboard = document.querySelector('.keyboard');
 const topIcons = document.querySelector('.topIcons');
 const clockNotif = document.querySelector('.clockNotif');
 const volProgress = document.querySelector('.volProgress');
@@ -71,7 +71,7 @@ btnTop.addEventListener('click', () => {
         setTimeout(() => {
             pesquisar.classList.remove('sumir');
         }, 100);
-        barraNotif.style.top = '-200px';
+        barraNotif.style.top = '-220px';
         topIcons.style.color = '#f0f8ff';
         
         barraDrop = false;
@@ -252,10 +252,12 @@ cadeado.addEventListener('click', () => {
 
 digitar.addEventListener('focusin', () => {
     iconesPesquisa.classList.add('sumir');
+    keyboard.style.bottom = '0px';
 })
 digitar.addEventListener('focusout', () => {
     iconesPesquisa.classList.remove('sumir');
     digitar.value = "";
+    keyboard.style.bottom = '-300px';
 })
 
 // Script Calendário
