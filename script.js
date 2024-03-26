@@ -11,6 +11,7 @@ const flexWidgets2 = document.querySelector('.flex-widgets2');
 
 // Widgets
 const barraNotif = document.querySelector('.barra-notif');
+const msgNotif = document.querySelector('.msgNotif');
 const keyboard = document.querySelector('.keyboard');
 const topIcons = document.querySelector('.topIcons');
 const clockNotif = document.querySelector('.clockNotif');
@@ -104,11 +105,17 @@ document.addEventListener('DOMContentLoaded', function() {
             circle[1].style.backgroundColor = '#006eff';
             circle[1].style.color = '#ffffff';
             iconNoti[3].innerHTML = 'do_not_disturb_on';
+            barraNotif.style.height = '140px';
+            msgNotif.classList.add('sumir');
             
         } else {
             circle[1].style.backgroundColor = '#b8bfd4';
             circle[1].style.color = '#4d4d4d';
             iconNoti[3].innerHTML = '';
+            barraNotif.style.height = '220px';
+            setTimeout(() => {
+                msgNotif.classList.remove('sumir');
+            }, 100);
         }
     });
 
