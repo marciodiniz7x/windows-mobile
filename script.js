@@ -239,8 +239,7 @@ cadeado.addEventListener('click', () => {
     // Barra de pesquisa
     pesquisar.style.top = '-100px';
     setTimeout(() => {
-        pesquisar.style.top = '100px';
-        
+        pesquisar.style.top = '100px';      
     }, 10);
 
     setTimeout(() => {
@@ -292,7 +291,6 @@ const atualizaHora = () => {
         zeroMinuto = "";
     }
 
-
     const semana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
     const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
@@ -318,14 +316,11 @@ const atualizaHora = () => {
     
 }
 
-
-
 const loopHora = setInterval(() => {
     atualizaHora();
 }, 100);
 
 // Script Trocar Tela
-
 const ativaTela1 = true;
 const ativaTela2 = false;
 const ativaTela3 = false;
