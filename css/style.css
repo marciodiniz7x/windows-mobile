@@ -564,7 +564,7 @@ body {
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
-
+    cursor: pointer;
 }
 .widgetCamera {
     opacity: 95%;
@@ -575,11 +575,10 @@ body {
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-
+    cursor: pointer;
 }
 .widgetLigar {
     opacity: 95%;
-
     background-color: aliceblue;
     width: 60px;
     height: 60px;
@@ -587,7 +586,7 @@ body {
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-
+    cursor: pointer;
 }
 .widgetMensagem {
     opacity: 90%;
@@ -598,7 +597,7 @@ body {
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
-
+    cursor: pointer;
 }
 
 .flex-widgets-social {
