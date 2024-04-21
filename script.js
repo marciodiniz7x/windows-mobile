@@ -309,9 +309,9 @@ const atualizaHora = () => {
 
     // Lógica que modifica as imagens no widget de clima
     if (pegarHora >= 6 && pegarHora <= 18) {
-        imgLuaSol.style.backgroundImage = "url(./img/climaSol.png)";
+        imgLuaSol.style.backgroundImage = "url(img/climaSol.png)";
     } else {
-        imgLuaSol.style.backgroundImage = "url(./img/climaLua.png)";
+        imgLuaSol.style.backgroundImage = "url(img/climaLua.png)";
     }
     
 }
