@@ -24,7 +24,7 @@ body {
 
 .tela {
     border: 5px solid #292929;
-    background-image: url(img/lockscreen05.png);
+    background-image: url("img/lockscreen05.png");
     top: 60px;
     overflow: hidden;
     position: relative;
@@ -46,7 +46,7 @@ body {
 /* LOCKSCREEN */
 .telaBlock {
     position: absolute;
-    background-image: url(img/lockscreen05.png);
+    background-image: url("img/lockscreen05.png");
     background-size: 120%;
     background-repeat: no-repeat;
     width: 360px;
