@@ -24,7 +24,7 @@ body {
 
 .tela {
     border: 5px solid #292929;
-    background-image: url(../img/lockscreen05.png);
+    background-image: url(img/lockscreen05.png);
     top: 60px;
     overflow: hidden;
     position: relative;
@@ -46,7 +46,7 @@ body {
 /* LOCKSCREEN */
 .telaBlock {
     position: absolute;
-    background-image: url(../img/lockscreen05.png);
+    background-image: url(img/lockscreen05.png);
     background-size: 120%;
     background-repeat: no-repeat;
     width: 360px;
@@ -85,7 +85,7 @@ body {
     margin-top: 300px;
     width: 250px;
     height: 243px;
-    background-image: url(../img/musicPlayer.png);
+    background-image: url(img/musicPlayer.png);
     background-size: 100%;
     background-position: center;
     border-radius: 20px;
@@ -145,7 +145,7 @@ body {
 /* TELA INICIAL */
 .telaInicial {
     position: absolute;
-    background-image: url(../img/wallpaper02.png);
+    background-image: url(img/wallpaper02.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 350px;
@@ -240,7 +240,7 @@ body {
     bottom: -300px;
     left: 5px;
     position: absolute;
-    background-image: url(../img/teclado.png);
+    background-image: url(img/teclado.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -410,9 +410,6 @@ body {
     border-radius: 15px;
     transition: 600ms;
 }
-.volProgressMax {
-    
-}
 
 .pesquisar {
     align-items: center;
@@ -499,7 +496,7 @@ body {
     height: 70px;
     margin-top: 10px;
     margin-left: 20px;
-    /* background-image: url(../img/climaLua.png); ADICIONEI DINAMICAMENTE NO SCRIPT */
+    /* background-image: url(img/climaLua.png); ADICIONEI DINAMICAMENTE NO SCRIPT */
     background-size: 100%;
 }
 .temperatura {
@@ -560,7 +557,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/widgetStore.png);
+    background-image: url(img/widgetStore.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -571,7 +568,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/office.png);
+    background-image: url(img/office.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -582,7 +579,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/widgetPhone.png);
+    background-image: url(img/widgetPhone.png);
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
@@ -593,7 +590,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/widgetMensagem.png);
+    background-image: url(img/widgetMensagem.png);
     background-size: 85%;
     background-position: center;
     background-repeat: no-repeat;
@@ -614,7 +611,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/iconWhatsapp.png);
+    background-image: url(img/iconWhatsapp.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -626,7 +623,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/iconInstagram.png);
+    background-image: url(img/iconInstagram.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -637,7 +634,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/oneDrive.png);
+    background-image: url(img/oneDrive.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -648,7 +645,7 @@ body {
     background-color: aliceblue;
     width: 60px;
     height: 60px;
-    background-image: url(../img/mail.png);
+    background-image: url(img/mail.png);
     background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -692,19 +689,19 @@ body {
     height: 90px;
 }
 .imagem-noticias {
-    background-image: url(../img/noticias.jpg);
+    background-image: url(img/noticias.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .imagem-esportes {
-    background-image: url(../img/esportes.jpg);
+    background-image: url(img/esportes.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .imagem-games {
-    background-image: url(../img/games.jpg);
+    background-image: url(img/games.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
