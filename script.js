@@ -55,8 +55,31 @@ const actTask = document.querySelector('.actTask');
 // -------------------- //
 //////// Script /////////
 
-// Barra de Notificações
+// Sons
+var touch = new Audio('audio/touch.mp3');
+var startup = new Audio('audio/startup.mp3');
 
+function playTouch() {
+    touch.pause();
+    touch.currentTime = 0;
+    touch.volume = 1;
+    setTimeout(() => {
+        touch.play();
+    }, 50);
+}
+
+function playStartup() {
+    startup.pause();
+    startup.currentTime = 0;
+    startup.volume = 1
+    setTimeout(() => {
+        startup.play();
+    }, 50);
+}
+
+botoesFisicos.addEventListener('click', playTouch);
+
+// Barra de Notificações
 let barraDrop = false;
 btnTop.addEventListener('click', () => {
     if (barraDrop === false) {
