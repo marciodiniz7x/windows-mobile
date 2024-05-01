@@ -65,7 +65,7 @@ function playTouch() {
     touch.volume = 1;
     setTimeout(() => {
         touch.play();
-    }, 50);
+    }, 5);
 }
 
 function playStartup() {
@@ -74,10 +74,11 @@ function playStartup() {
     startup.volume = 1
     setTimeout(() => {
         startup.play();
-    }, 50);
+    }, 5);
 }
 
 botoesFisicos.addEventListener('click', playTouch);
+telaInicial.addEventListener('click', playTouch);
 
 // Barra de Notificações
 let barraDrop = false;
@@ -217,6 +218,7 @@ btnPower.addEventListener('click', () => {
         telaBlock.classList.add('sumir');
         telaInicial.classList.add('sumir');
         telaDesligada = true;
+        
     }
     desativarInicio();
 });
@@ -255,6 +257,9 @@ btnMenos.addEventListener('click', () => {
 });
 
 cadeado.addEventListener('click', () => {
+
+    playTouch();
+    playStartup();
     
     telaDeBloqueio = false;
     telaBlock.classList.add('abrirVert');
