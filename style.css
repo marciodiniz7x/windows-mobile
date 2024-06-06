@@ -60,7 +60,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'SF UI Display';
     color: white;
     font-weight: bold;
     top: 0;
@@ -73,7 +72,6 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'SF UI Display light';
     color: white;
     top: 0;
     bottom: 0;
@@ -211,7 +209,6 @@ body {
 .clockNotif {
     z-index: 99;
     font-size: 40px;
-    font-family: 'SF UI Display light';
 }
 
 .tela1 {
@@ -234,6 +231,7 @@ body {
     height: 220px;
     z-index: 5;
     transition: 280ms;
+
 }
 
 .keyboard {
@@ -517,7 +515,7 @@ body {
     margin-top: 15px;
     margin-left: 150px;
     font-size: 40px;
-    font-family: 'SF UI Display light';
+    
 }
 .cidade {
     margin-top: 25px;
@@ -654,7 +652,6 @@ body {
 
 /* Tela 2 */
 .flex-widgets2 {
-    z-index: 99;
     top: -320px;
     position: relative;
     display: flex;
@@ -666,15 +663,18 @@ body {
     height: 420px;
     transition: 400ms;
     left: 320px;
- 
+    z-index: 4;
 }
 .news {
     display: flex;
     align-items: center;
+
     color: white;
     text-align: left;
     padding: 10px;
     border-radius: 9px;
+    z-index: 1;
+    
 }
 .news .texto {
     width: 170px;
@@ -757,14 +757,14 @@ body {
     margin-top: 5px; 
     color: rgb(28, 126, 255);  
     font-size: 12px;
-    font-family: 'SF UI Display light';
+   
 }
 .diaMes {
     text-align: left;
     margin-left: 20px;
     margin-top: -10px;
     font-size: 35px;
-    font-family: 'SF UI Display';
+    
 }
 
 .traco-tarefa1 {
@@ -791,7 +791,7 @@ body {
     margin-left: 30px;
     font-weight: bolder;
     font-size: 12px;
-    font-family: 'SF UI Display light';
+   
 }
 .tarefa1-desc {
     margin-top: -4px;
@@ -799,7 +799,7 @@ body {
     margin-left: 30px;
     color: rgb(23, 116, 255);
     font-size: 12px;
-    font-family: 'SF UI Display light';
+   
 }
 
 .traco-tarefa2 {
@@ -826,7 +826,7 @@ body {
     margin-left: 30px;
     font-weight: bolder;
     font-size: 12px;
-    font-family: 'SF UI Display light';
+    
 }
 .tarefa2-desc {
     margin-top: -4px;
@@ -834,7 +834,7 @@ body {
     margin-left: 30px;
     color: rgb(4, 148, 81);
     font-size: 12px;
-    font-family: 'SF UI Display light';
+    
 }
 
 /* Botões Inferiores */
